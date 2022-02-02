@@ -1,5 +1,12 @@
+$indigo500: rgb(99, 102, 241);
+$indigo600: rgb(79, 70, 229);
+$indigo700: rgb(67, 56, 202);
+$shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+$dropshaddow-2xl: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+
 .navbar {
   width: 100%;
   height: 80px;
-  background-color: blue;
+  background-color: $indigo700;
+  filter: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
 }
