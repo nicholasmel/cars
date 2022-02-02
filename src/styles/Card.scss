@@ -1,0 +1,70 @@
+$cardpadding: 0px 14px;
+
+.card {
+  background-color: red;
+  border: 2px;
+  border-style: solid;
+  border-color: black;
+  border-radius: 4px;
+  height: auto;
+  width: 420px;
+  display: block;
+
+  img {
+    height: auto;
+    width: 100%;
+    padding-top: 12px;
+  }
+
+  h1 {
+    color: white;
+    font-size: 20px;
+  }
+}
+
+.card--info {
+  height: auto;
+  width: auto;
+  margin: $cardpadding;
+  background-color: blue;
+  text-align: left;
+
+  h1 {
+    margin-bottom: 0px;
+  }
+}
+
+.card--info-primary {
+  display: flex;
+  height: auto;
+  width: auto;
+
+  p {
+    margin: 6px 0px;
+    padding-right: 10px;
+  }
+}
+
+.card--price {
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 1;
+  height: 60px;
+  width: auto;
+  margin: $cardpadding;
+  background-color: orange;
+  align-items: center;
+
+  h1 {
+    text-align: left;
+    grid-column: 1;
+    font-size: 26px;
+  }
+
+  h2 {
+    text-align: right;
+    grid-column: 2;
+    font-size: small;
+    font-weight: 400;
+  }
+}
