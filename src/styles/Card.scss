@@ -1,23 +1,27 @@
-$cardpadding: 0px 14px;
+$cardpadding: 0px 16px;
+$darktext: rgb(17, 24, 39);
+$cardcolor: rgb(243, 244, 246);
+$cardborder: rgb(229, 231, 235);
+$graymedium: rgb(107, 114, 128);
 
 .card {
-  background-color: red;
-  border: 2px;
+  background-color: $cardcolor;
+  border: 1px;
   border-style: solid;
-  border-color: black;
+  border-color: $cardborder;
   border-radius: 4px;
   height: auto;
   width: 420px;
   display: block;
 
   img {
-    height: auto;
-    width: 100%;
-    padding-top: 12px;
+    height: 100%;
+    width: 80%;
+    padding-top: 22px;
   }
 
   h1 {
-    color: white;
+    color: $darktext;
     font-size: 20px;
   }
 }
@@ -26,7 +30,6 @@ $cardpadding: 0px 14px;
   height: auto;
   width: auto;
   margin: $cardpadding;
-  background-color: blue;
   text-align: left;
 
   h1 {
@@ -42,6 +45,9 @@ $cardpadding: 0px 14px;
   p {
     margin: 6px 0px;
     padding-right: 10px;
+    color: $darktext;
+    font-size: 14px;
+    font-weight: 300;
   }
 }
 
@@ -52,13 +58,13 @@ $cardpadding: 0px 14px;
   height: 60px;
   width: auto;
   margin: $cardpadding;
-  background-color: orange;
   align-items: center;
 
   h1 {
     text-align: left;
     grid-column: 1;
     font-size: 26px;
+    color: $darktext;
   }
 
   h2 {
@@ -66,5 +72,6 @@ $cardpadding: 0px 14px;
     grid-column: 2;
     font-size: small;
     font-weight: 400;
+    color: $graymedium;
   }
 }
