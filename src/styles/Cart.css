@@ -1,0 +1,34 @@
+.cart {
+  height: auto;
+  width: 100%;
+  background-color: #f3f4f6;
+  padding-bottom: 10px;
+}
+
+.cart--card {
+  height: auto;
+  width: auto;
+  background-color: #ffff;
+  margin: 10px 480px;
+  padding: 10px 0px;
+  border: 1px;
+  border-style: solid;
+  border-color: #e5e7eb;
+  border-radius: 4px;
+}
+
+.cart--card img {
+  height: 100px;
+  width: auto;
+}
+
+.cart--card h1 {
+  font-size: medium;
+  padding-bottom: 10px;
+}
+
+.cart--card:hover {
+  -webkit-box-shadow: 0 10px 15px -3px #d1d5db, 0 4px 6px -4px #d1d5db;
+          box-shadow: 0 10px 15px -3px #d1d5db, 0 4px 6px -4px #d1d5db;
+}
+/*# sourceMappingURL=Cart.css.map */

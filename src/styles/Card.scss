@@ -18,9 +18,9 @@ $shadowgrey: #d1d5db;
   margin-top: 13px;
 
   img {
-    height: auto;
-    width: 80%;
-    padding-top: 22px;
+    height: 100px;
+    width: auto;
+    padding-top: 40px;
   }
 
   h1 {
@@ -85,4 +85,8 @@ $shadowgrey: #d1d5db;
 
 .card--button {
   padding: 10px;
+
+  button:hover {
+    cursor: pointer;
+  }
 }

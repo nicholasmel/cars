@@ -1,0 +1,36 @@
+$cardcolor: #ffff;
+$cardborder: rgb(229, 231, 235);
+$shadowgrey: #d1d5db;
+
+.cart {
+  height: auto;
+  width: 100%;
+  background-color: rgb(243, 244, 246);
+  padding-bottom: 10px;
+}
+
+.cart--card {
+  height: auto;
+  width: auto;
+  background-color: $cardcolor;
+  margin: 10px 480px;
+  padding: 10px 0px;
+  border: 1px;
+  border-style: solid;
+  border-color: $cardborder;
+  border-radius: 4px;
+
+  img {
+    height: 100px;
+    width: auto;
+  }
+
+  h1 {
+    font-size: medium;
+    padding-bottom: 10px;
+  }
+}
+
+.cart--card:hover {
+  box-shadow: 0 10px 15px -3px $shadowgrey, 0 4px 6px -4px $shadowgrey;
+}

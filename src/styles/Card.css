@@ -12,9 +12,9 @@
 }
 
 .card img {
-  height: auto;
-  width: 80%;
-  padding-top: 22px;
+  height: 100px;
+  width: auto;
+  padding-top: 40px;
 }
 
 .card h1 {
@@ -88,5 +88,9 @@
 
 .card--button {
   padding: 10px;
+}
+
+.card--button button:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=Card.css.map */

@@ -16,8 +16,14 @@ function CarResult() {
         setCart(cart.filter(cars => cars != carsToRemove));
     }
 
+    let price = 0;
+
+    const currencyFormat = (price) => {
+        return '$' + price.toFixed(2).replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+    }
+
     return (
-        <div>
+        <div className='results'>
             <div className='car'>
                 {cars.map((car, id) => (
                     <Card key={id} image={car.img} title={car.title} model={car.model} miles={car.miles} price={car.price} monthly={car.monthly} button={() => addToCart(car)} />
@@ -26,9 +32,11 @@ function CarResult() {
             <div className='cart'>
                 <h1>This is Cart</h1>
                 {cart.map((car, id) => (
-                    <Cart cars={cart} img={car.img} button={() => removeFromCart(car)} />
+                    (price += car.price),
+                    <Cart cars={cart} img={car.img2} title={car.title} price={car.price} button={() => removeFromCart(car)} />
                 ))}
             </div>
+            <div><h1>Total: {currencyFormat(price)}</h1></div>
         </div>
 
     );

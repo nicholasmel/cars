@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import "../styles/Card.css";
 
 function Card({ image, title, model, miles, price, monthly, button }) {
+    let formatPrice = '$' + price.toFixed().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+
     return (
         <div className='card'>
             <div className='card--border' />
@@ -14,11 +16,11 @@ function Card({ image, title, model, miles, price, monthly, button }) {
                 </div>
             </div>
             <div className='card--price'>
-                <h1>{price}</h1>
+                <h1>{formatPrice}</h1>
                 <h2>{monthly}</h2>
             </div>
             <div className='card--button'>
-                <button onClick={button}>Purchase Vehicle</button>
+                <button onClick={button}>Add Vehicle</button>
             </div>
         </div >
     );

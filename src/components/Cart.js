@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
+import '../styles/Cart.css'
 
-function Cart({ cars, img, button }) {
+function Cart({ cars, img, title, price, button }) {
     return (
         <div className='cart'>
             <div key={cars.id} className='cart--card' >
+                <h1>{title}</h1>
                 <img src={img} alt="" />
-                <button onClick={button}>Remove</button>
+                <p>Price: {price}</p>
+                <button onClick={button}>Remove Vehicle</button>
             </div>
         </div >
     );
