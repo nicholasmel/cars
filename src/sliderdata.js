@@ -13,7 +13,7 @@ export const sliderdata = [
     },
     {
         id: 4,
-        img: 'https://toyota.scene7.com/is/image/toyota/SUP_MY20_0108_V001?wid=2000&fmt=jpg&fit=crop',
+        img: 'https://www.toyota.com/imgix/responsive/images/gallery/photos-videos/2020/gr-supra/SUP_MY20_0033_V002.png?w=2880&q=90&fm=jpg&fit=max&cs=strip&bg=fff&auto=compress',
     },
     {
         id: 5,
