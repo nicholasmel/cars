@@ -1,8 +1,9 @@
 $cardpadding: 0px 16px;
 $darktext: rgb(17, 24, 39);
-$cardcolor: rgb(243, 244, 246);
+$cardcolor: #ffff;
 $cardborder: rgb(229, 231, 235);
 $graymedium: rgb(107, 114, 128);
+$shadowgrey: #d1d5db;
 
 .card {
   background-color: $cardcolor;
@@ -11,11 +12,13 @@ $graymedium: rgb(107, 114, 128);
   border-color: $cardborder;
   border-radius: 4px;
   height: auto;
-  width: 420px;
+  width: 370px;
   display: block;
+  margin: 0px 8px;
+  margin-top: 13px;
 
   img {
-    height: 100%;
+    height: auto;
     width: 80%;
     padding-top: 22px;
   }
@@ -24,6 +27,10 @@ $graymedium: rgb(107, 114, 128);
     color: $darktext;
     font-size: 20px;
   }
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px -3px $shadowgrey, 0 4px 6px -4px $shadowgrey;
 }
 
 .card--info {
@@ -74,4 +81,8 @@ $graymedium: rgb(107, 114, 128);
     font-weight: 400;
     color: $graymedium;
   }
+}
+
+.card--button {
+  padding: 10px;
 }

@@ -1,16 +1,18 @@
 .card {
-  background-color: #f3f4f6;
+  background-color: #ffff;
   border: 1px;
   border-style: solid;
   border-color: #e5e7eb;
   border-radius: 4px;
   height: auto;
-  width: 420px;
+  width: 370px;
   display: block;
+  margin: 0px 8px;
+  margin-top: 13px;
 }
 
 .card img {
-  height: 100%;
+  height: auto;
   width: 80%;
   padding-top: 22px;
 }
@@ -18,6 +20,11 @@
 .card h1 {
   color: #111827;
   font-size: 20px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 10px 15px -3px #d1d5db, 0 4px 6px -4px #d1d5db;
+          box-shadow: 0 10px 15px -3px #d1d5db, 0 4px 6px -4px #d1d5db;
 }
 
 .card--info {
@@ -77,5 +84,9 @@
   font-size: small;
   font-weight: 400;
   color: #6b7280;
+}
+
+.card--button {
+  padding: 10px;
 }
 /*# sourceMappingURL=Card.css.map */

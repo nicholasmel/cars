@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../styles/Card.css";
 
-function Card({ image, title, model, miles, price, monthly }) {
+function Card({ image, title, model, miles, price, monthly, button }) {
     return (
         <div className='card'>
             <div className='card--border' />
@@ -18,7 +18,7 @@ function Card({ image, title, model, miles, price, monthly }) {
                 <h2>{monthly}</h2>
             </div>
             <div className='card--button'>
-                <h1>Purchase</h1>
+                <button onClick={button}>Purchase Vehicle</button>
             </div>
         </div >
     );
