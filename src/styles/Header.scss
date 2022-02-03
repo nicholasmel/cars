@@ -19,12 +19,22 @@
   margin-top: 70px;
 }
 
-.arrow-left {
+.arrow--left {
   margin: 40px;
+  opacity: 0.8;
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
 }
 
 .arrow-right {
   margin: 40px;
+  opacity: 0.8;
+  &:hover {
+    cursor: pointer;
+    opacity: 1;
+  }
 }
 
 .slider {

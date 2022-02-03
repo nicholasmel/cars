@@ -23,26 +23,27 @@ function Header() {
 
     return (
         <div className="header">
-            {/* <img src="https://toyota.scene7.com/is/image/toyota/SUP_MY22_0012_V001_welcome?fmt=jpg&fit=crop&qlt=90&hei=660" alt="" /> */}
             <div className='arrow'>
-                <div className='arrow-left' onClick={prevSlide}>
+                <div className='arrow--left' onClick={prevSlide}>
                     <ArrowCircleLeftIcon sx={{ fontSize: '70px', color: 'white' }} />
                 </div>
                 <div className='arrow-right' onClick={nextSlide}>
                     <ArrowCircleRightIcon sx={{ fontSize: '70px', color: 'white' }} />
                 </div>
             </div>
-            {sliderdata.map((item, id) => {
-                return (
-                    <div key={id} className='slider'>
-                        {id === slide && (
-                            <img src={item.img} alt="" />
-                        )}
-                    </div>
+            {
+                sliderdata.map((item, id) => {
+                    return (
+                        <div key={id} className='slider'>
+                            {id === slide && (
+                                <img src={item.img} alt="" />
+                            )}
+                        </div>
+                    )
+                }
                 )
             }
-            )}
-        </div>
+        </div >
     );
 }
 
