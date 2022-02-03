@@ -3,6 +3,13 @@
   width: 100%;
   background-color: #f3f4f6;
   padding-bottom: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .cart--card {
@@ -15,15 +22,26 @@
   border-style: solid;
   border-color: #e5e7eb;
   border-radius: 4px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .cart--card img {
-  height: 100px;
+  height: 90px;
   width: auto;
 }
 
 .cart--card h1 {
   font-size: medium;
+}
+
+.cart--card h2 {
+  font-size: small;
   padding-bottom: 10px;
 }
 

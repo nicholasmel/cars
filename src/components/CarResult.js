@@ -33,7 +33,7 @@ function CarResult() {
                 <h1>This is Cart</h1>
                 {cart.map((car, id) => (
                     (price += car.price),
-                    <Cart cars={cart} img={car.img2} title={car.title} price={car.price} button={() => removeFromCart(car)} />
+                    <Cart cars={cart} img={car.img2} title={car.title} model={car.model} price={car.price} button={() => removeFromCart(car)} />
                 ))}
             </div>
             <div><h1>Total: {currencyFormat(price)}</h1></div>

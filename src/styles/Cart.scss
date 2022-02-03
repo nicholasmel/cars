@@ -1,12 +1,13 @@
-$cardcolor: #ffff;
-$cardborder: rgb(229, 231, 235);
-$shadowgrey: #d1d5db;
+@import "../variables/variables.scss";
 
 .cart {
   height: auto;
   width: 100%;
-  background-color: rgb(243, 244, 246);
+  background-color: $bgcolor;
   padding-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .cart--card {
@@ -19,14 +20,21 @@ $shadowgrey: #d1d5db;
   border-style: solid;
   border-color: $cardborder;
   border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
   img {
-    height: 100px;
+    height: 90px;
     width: auto;
   }
 
   h1 {
     font-size: medium;
+  }
+
+  h2 {
+    font-size: small;
     padding-bottom: 10px;
   }
 }

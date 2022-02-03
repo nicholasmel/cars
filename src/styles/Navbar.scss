@@ -1,6 +1,4 @@
-$indigo500: rgb(99, 102, 241);
-$indigo600: rgb(79, 70, 229);
-$indigo700: rgb(67, 56, 202);
+@import "../variables/variables.scss";
 
 .navbar {
   width: 100%;
@@ -8,5 +6,5 @@ $indigo700: rgb(67, 56, 202);
   background-color: $indigo500;
   position: fixed;
   top: 0;
-  right: 0;
+  z-index: 1;
 }

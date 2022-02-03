@@ -1,9 +1,4 @@
-$cardpadding: 0px 16px;
-$darktext: rgb(17, 24, 39);
-$cardcolor: #ffff;
-$cardborder: rgb(229, 231, 235);
-$graymedium: rgb(107, 114, 128);
-$shadowgrey: #d1d5db;
+@import "../variables/variables.scss";
 
 .card {
   background-color: $cardcolor;
@@ -16,6 +11,9 @@ $shadowgrey: #d1d5db;
   display: block;
   margin: 0px 8px;
   margin-top: 13px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
   img {
     height: 100px;

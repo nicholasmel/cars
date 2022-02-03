@@ -1,5 +1,4 @@
 import './App.css';
-import Card from './components/Card';
 import CarResult from './components/CarResult';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
