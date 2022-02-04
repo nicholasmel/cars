@@ -20,9 +20,10 @@
   width: 30vw;
   position: fixed;
   top: 0;
-  z-index: 300;
-  display: none;
+  right: -100%;
   overflow-y: scroll;
+  -webkit-transition: 1500ms;
+  transition: 1500ms;
 }
 
 .cart--item h1 {
@@ -38,9 +39,12 @@
   right: 0;
   z-index: 300;
   overflow-y: scroll;
+  -webkit-transition: 1000ms;
+  transition: 1000ms;
 }
 
 .cart--item-active h1 {
+  font-weight: 300;
   text-align: center;
   padding-top: 20px;
 }
@@ -51,6 +55,8 @@
   margin: 0;
   padding: 0;
   position: fixed;
+  -webkit-transition: 1350ms;
+  transition: 1350ms;
 }
 
 .cart--close:hover {

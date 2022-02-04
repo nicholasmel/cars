@@ -12,7 +12,7 @@ function Card({ image, title, model, miles, price, monthly, button }) {
             <div className='card--info'>
                 <h1>{title}</h1>
                 <div className='card--info-primary'>
-                    <p>{model}</p>
+                    <h4>{model}</h4>
                     <p>{miles}</p>
                 </div>
             </div>

@@ -17,9 +17,9 @@
   width: 30vw;
   position: fixed;
   top: 0;
-  z-index: 300;
-  display: none;
+  right: -100%;
   overflow-y: scroll;
+  transition: 1500ms;
 
   h1 {
     text-align: center;
@@ -35,8 +35,10 @@
   right: 0;
   z-index: 300;
   overflow-y: scroll;
+  transition: 1000ms;
 
   h1 {
+    font-weight: 300;
     text-align: center;
     padding-top: 20px;
   }
@@ -48,6 +50,7 @@
   margin: 0;
   padding: 0;
   position: fixed;
+  transition: 1350ms;
 
   &:hover {
     opacity: 1;

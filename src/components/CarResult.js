@@ -37,17 +37,17 @@ function CarResult() {
             </div>
             <div className={sidebar ? 'cart--item-active' : 'cart--item'}>
                 <div className='cart--close' onClick={leaveSidebar}>
-                    <CloseIcon sx={{ fontSize: '50px' }} />
+                    <CloseIcon sx={{ fontSize: '50px', color: '#5c6bc0' }} />
                 </div>
-                <h1>Your Cart</h1>
+                <h1>Shopping Cart</h1>
                 <div className='cart--item-card'>
                     {cart.map((car, id) => (
                         (price += car.price),
-                        <Cart cars={cart} img={car.img2} title={car.title} model={car.model} price={car.price} button={() => removeFromCart(car)} />
+                        <Cart key={id} cars={cart} img={car.img2} title={car.title} model={car.model} price={car.price} button={() => removeFromCart(car)} />
                     ))}
                 </div>
                 <div className='card--total'>
-                    <h1>Total: {currencyFormat(price)}</h1>
+                    <h1>Subtotal({cart.length}): {currencyFormat(price)}</h1>
                 </div>
             </div>
 

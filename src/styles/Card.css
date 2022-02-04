@@ -53,6 +53,13 @@
   width: auto;
 }
 
+.card--info-primary h4 {
+  margin: 6px 0px;
+  padding-right: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 .card--info-primary p {
   margin: 6px 0px;
   padding-right: 10px;
