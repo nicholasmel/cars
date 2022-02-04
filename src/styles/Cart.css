@@ -9,6 +9,7 @@
   height: auto;
   width: auto;
   background-color: #ffff;
+  padding: 8px 0px;
   border: 1px;
   border-style: solid;
   border-color: #e5e7eb;
@@ -17,8 +18,8 @@
 }
 
 .cart--card img {
-  height: 90px;
-  width: auto;
+  height: auto;
+  width: 100%;
 }
 
 .cart--card h1 {
@@ -27,7 +28,7 @@
 
 .cart--card h2 {
   font-size: small;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .cart--card:hover {
