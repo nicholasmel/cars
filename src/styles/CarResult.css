@@ -14,7 +14,50 @@
   background-color: #f3f4f6;
 }
 
-.cart {
-  display: flexbox;
+.cart--item {
+  background-color: #f3f4f6;
+  height: 100vh;
+  width: 30vw;
+  position: fixed;
+  top: 0;
+  z-index: 300;
+  display: none;
+  overflow-y: scroll;
+}
+
+.cart--item h1 {
+  text-align: center;
+}
+
+.cart--item-active {
+  background-color: rgba(243, 244, 246, 0.924);
+  height: 100vh;
+  width: 30vw;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 300;
+  overflow-y: scroll;
+}
+
+.cart--item-active h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.cart--close {
+  width: 14%;
+  opacity: 0.5;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+}
+
+.cart--close:hover {
+  opacity: 1;
+}
+
+.cart--item-card {
+  margin: 40px;
 }
 /*# sourceMappingURL=CarResult.css.map */

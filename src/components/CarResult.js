@@ -3,17 +3,23 @@ import '../styles/CarResult.css';
 import Card from './Card';
 import { cars } from '../data';
 import Cart from './Cart';
+import CloseIcon from '@mui/icons-material/Close';
 
 
 function CarResult() {
     const [cart, setCart] = useState([]);
+    const [sidebar, setSidebar] = useState(false);
+
+    const showSidebar = () => setSidebar(true);
+    const leaveSidebar = () => setSidebar(false);
 
     const addToCart = (cars) => {
         setCart([...cart, { ...cars }]);
+        showSidebar();
     };
 
     const removeFromCart = (carsToRemove) => {
-        setCart(cart.filter(cars => cars != carsToRemove));
+        setCart(cart.filter(cars => cars !== carsToRemove));
     }
 
     let price = 0;
@@ -29,14 +35,22 @@ function CarResult() {
                     <Card key={id} image={car.img} title={car.title} model={car.model} miles={car.miles} price={car.price} monthly={car.monthly} button={() => addToCart(car)} />
                 ))}
             </div>
-            <div className='cart'>
-                <h1>This is Cart</h1>
-                {cart.map((car, id) => (
-                    (price += car.price),
-                    <Cart cars={cart} img={car.img2} title={car.title} model={car.model} price={car.price} button={() => removeFromCart(car)} />
-                ))}
+            <div className={sidebar ? 'cart--item-active' : 'cart--item'}>
+                <div className='cart--close' onClick={leaveSidebar}>
+                    <CloseIcon sx={{ fontSize: '50px' }} />
+                </div>
+                <h1>Your Cart</h1>
+                <div className='cart--item-card'>
+                    {cart.map((car, id) => (
+                        (price += car.price),
+                        <Cart cars={cart} img={car.img2} title={car.title} model={car.model} price={car.price} button={() => removeFromCart(car)} />
+                    ))}
+                </div>
+                <div className='card--total'>
+                    <h1>Total: {currencyFormat(price)}</h1>
+                </div>
             </div>
-            <div><h1>Total: {currencyFormat(price)}</h1></div>
+
         </div>
 
     );

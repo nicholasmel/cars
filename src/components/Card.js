@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "../styles/Card.css";
+import Button from '@mui/material/Button';
 
 function Card({ image, title, model, miles, price, monthly, button }) {
     let formatPrice = '$' + price.toFixed().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
@@ -20,7 +21,7 @@ function Card({ image, title, model, miles, price, monthly, button }) {
                 <h2>{monthly}</h2>
             </div>
             <div className='card--button'>
-                <button onClick={button}>Add Vehicle</button>
+                <Button variant='contained' onClick={button}>Add Vehicle</Button>
             </div>
         </div >
     );
