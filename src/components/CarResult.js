@@ -46,7 +46,7 @@ function CarResult() {
                         <Cart key={id} cars={cart} img={car.img2} title={car.title} model={car.model} price={car.price} button={() => removeFromCart(car)} />
                     ))}
                 </div>
-                <div className='card--total'>
+                <div className='cart--total'>
                     <h1>Subtotal({cart.length}): {currencyFormat(price)}</h1>
                 </div>
             </div>
