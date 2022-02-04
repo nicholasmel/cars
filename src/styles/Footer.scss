@@ -1,0 +1,41 @@
+$iconpadding: 0 40px;
+$iconopacity: 0.8;
+
+.footer {
+  height: 20vh;
+  width: auto;
+  background-color: #303f9f;
+  padding: 100px 0px 0px 120px;
+  display: flex;
+}
+
+.footer--icon-linkedin {
+  height: 50px;
+  width: auto;
+  padding: $iconpadding;
+  opacity: $iconopacity;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.footer--icon-github {
+  height: 50px;
+  padding-top: 3px;
+  opacity: $iconopacity;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.footer--icon-email {
+  height: 50px;
+  padding: $iconpadding;
+  opacity: $iconopacity;
+
+  &:hover {
+    opacity: 1;
+  }
+}

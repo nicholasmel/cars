@@ -1,9 +1,54 @@
 .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   height: 70px;
-  background-color: #5c6bc0;
+  background-color: #3f51b5;
   position: fixed;
   top: 0;
   z-index: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar--left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  width: auto;
+  margin-left: 50px;
+}
+
+.navbar--left img {
+  height: 30px;
+}
+
+.navbar--middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  width: auto;
+  margin-right: 85px;
+}
+
+.navbar--middle p {
+  padding: 0px 20px;
+}
+
+.navbar--right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  width: auto;
+  margin-right: 50px;
 }
 /*# sourceMappingURL=Navbar.css.map */
