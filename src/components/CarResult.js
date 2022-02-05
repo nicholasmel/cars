@@ -31,7 +31,7 @@ function CarResult() {
 
     return (
         <div className='results'>
-            <div className='car'>
+            <div className={sidebar ? 'car-active' : 'car'}>
                 {cars.map((car, id) => (
                     <Card key={id} image={car.img} title={car.title} model={car.model} miles={car.miles} price={car.price} monthly={car.monthly} button={() => addToCart(car)} />
                 ))}
