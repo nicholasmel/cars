@@ -4,7 +4,7 @@
   display: flex;
   width: 100%;
   height: 70px;
-  background-color: $indigo500;
+  background-color: #1565c0;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -28,10 +28,17 @@
   display: flex;
   height: auto;
   width: auto;
-  margin-right: 85px;
+  margin-right: 145px;
 
   p {
     padding: 0px 20px;
+    font-size: small;
+    font-weight: 500;
+    color: white;
+
+    &:hover {
+      color: #03a9f4;
+    }
   }
 }
 
@@ -40,4 +47,14 @@
   height: auto;
   width: auto;
   margin-right: $navbarpadding;
+
+  p {
+    font-size: small;
+    font-weight: 500;
+    color: white;
+
+    &:hover {
+      color: #03a9f4;
+    }
+  }
 }

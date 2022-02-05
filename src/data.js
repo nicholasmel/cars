@@ -24,7 +24,6 @@ export const cars = [
         model: 'A91 Edition',
         miles: '22/30 est. mpg',
         price: 54795,
-        monthly: 'Est. $900/mo',
     },
     {
         id: 2,
@@ -34,7 +33,6 @@ export const cars = [
         model: 'NISMO',
         miles: '16/22 est. mpg',
         price: 212535,
-        monthly: 'Est. $900/mo',
     },
     {
         id: 3,
@@ -44,7 +42,6 @@ export const cars = [
         model: 'F Sport Performance',
         miles: '20/27 est. mpg',
         price: 57575,
-        monthly: 'Est. $900/mo',
     },
     {
         id: 4,
@@ -54,7 +51,6 @@ export const cars = [
         model: 'A91-CF Edition',
         miles: '22/30 est. mpg',
         price: 63380,
-        monthly: 'Est. $900/mo',
     },
     {
         id: 5,
@@ -64,7 +60,6 @@ export const cars = [
         model: 'TRD Pro',
         miles: '18/22 est. mpg',
         price: 46135,
-        monthly: 'Est. $900/mo',
     },
     {
         id: 6,
@@ -74,7 +69,6 @@ export const cars = [
         model: 'TRD Off-Road',
         miles: '19/24 est. mpg',
         price: 34890,
-        monthly: 'Est. $900/mo',
     },
     {
         id: 7,
@@ -84,7 +78,6 @@ export const cars = [
         model: 'A91-CF Edition',
         miles: '22/30 est. mpg',
         price: 63380,
-        monthly: 'Est. $900/mo',
     },
     {
         id: 8,
@@ -94,6 +87,5 @@ export const cars = [
         model: 'Carbon Package',
         miles: '20/27 est. mpg',
         price: 86946,
-        monthly: 'Est. $900/mo',
     },
 ]

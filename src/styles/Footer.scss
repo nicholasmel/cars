@@ -4,12 +4,12 @@ $iconopacity: 0.8;
 .footer {
   height: 20vh;
   width: auto;
-  background-color: #303f9f;
+  background-color: #01579b;
   padding: 100px 0px 0px 120px;
   display: flex;
 }
 
-.footer--icon-linkedin {
+.footer--linkedin {
   height: 50px;
   width: auto;
   padding: $iconpadding;
@@ -20,7 +20,7 @@ $iconopacity: 0.8;
   }
 }
 
-.footer--icon-github {
+.footer--github {
   height: 50px;
   padding-top: 3px;
   opacity: $iconopacity;
@@ -30,7 +30,7 @@ $iconopacity: 0.8;
   }
 }
 
-.footer--icon-email {
+.footer--email {
   height: 50px;
   padding: $iconpadding;
   opacity: $iconopacity;

@@ -7,9 +7,15 @@ import EmailIcon from '@mui/icons-material/Email';
 function Footer() {
     return (
         <div className='footer'>
-            <LinkedInIcon className="footer--icon-linkedin" sx={{ fontSize: "50px", color: 'white' }} />
-            <GitHubIcon className="footer--icon-github" sx={{ fontSize: "44px", color: 'white' }} />
-            <EmailIcon className="footer--icon-email" sx={{ fontSize: "50px", color: 'white' }} />
+            <a className="footer--linkedin" href='https://www.linkedin.com/in/nicholasmel'>
+                <LinkedInIcon sx={{ fontSize: "40px", color: 'white' }} />
+            </a>
+            <a className="footer--github" href='https://github.com/nicholasmel'>
+                <GitHubIcon sx={{ fontSize: "34px", color: 'white' }} />
+            </a>
+            <a className="footer--email" href='mailto:nicholas.mel@asu.edu'>
+                <EmailIcon sx={{ fontSize: "40px", color: 'white' }} />
+            </a>
         </div>
     );
 }

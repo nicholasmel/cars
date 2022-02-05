@@ -1,41 +1,41 @@
 .footer {
   height: 20vh;
   width: auto;
-  background-color: #303f9f;
+  background-color: #01579b;
   padding: 100px 0px 0px 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.footer--icon-linkedin {
+.footer--linkedin {
   height: 50px;
   width: auto;
   padding: 0 40px;
   opacity: 0.8;
 }
 
-.footer--icon-linkedin:hover {
+.footer--linkedin:hover {
   opacity: 1;
 }
 
-.footer--icon-github {
+.footer--github {
   height: 50px;
   padding-top: 3px;
   opacity: 0.8;
 }
 
-.footer--icon-github:hover {
+.footer--github:hover {
   opacity: 1;
 }
 
-.footer--icon-email {
+.footer--email {
   height: 50px;
   padding: 0 40px;
   opacity: 0.8;
 }
 
-.footer--icon-email:hover {
+.footer--email:hover {
   opacity: 1;
 }
 /*# sourceMappingURL=Footer.css.map */

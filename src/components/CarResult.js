@@ -4,6 +4,7 @@ import Card from './Card';
 import { cars } from '../data';
 import Cart from './Cart';
 import CloseIcon from '@mui/icons-material/Close';
+import Navbar from './Navbar';
 
 
 function CarResult() {

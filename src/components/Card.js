@@ -3,7 +3,10 @@ import "../styles/Card.css";
 import Button from '@mui/material/Button';
 
 function Card({ image, title, model, miles, price, monthly, button }) {
+    const rate = 0.01819509;
     let formatPrice = '$' + price.toFixed().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+
+    let formatMonthly = 'Est. $' + (price * rate).toFixed().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,') + '/mo*'
 
     return (
         <div className='card'>
@@ -18,7 +21,7 @@ function Card({ image, title, model, miles, price, monthly, button }) {
             </div>
             <div className='card--price'>
                 <h1>{formatPrice}</h1>
-                <h2>{monthly}</h2>
+                <h2>{formatMonthly}</h2>
             </div>
             <div className='card--button'>
                 <Button variant='contained' onClick={button}>Add Vehicle</Button>

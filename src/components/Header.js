@@ -3,7 +3,6 @@ import '../styles/Header.css';
 import ArrowCircleLeftIcon from '@mui/icons-material/ArrowCircleLeft';
 import ArrowCircleRightIcon from '@mui/icons-material/ArrowCircleRight';
 import { sliderdata } from '../sliderdata';
-import { hover } from '@testing-library/user-event/dist/hover';
 
 
 function Header() {
