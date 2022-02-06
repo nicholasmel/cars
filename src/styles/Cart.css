@@ -13,7 +13,6 @@
   border: 1px;
   border-style: solid;
   border-color: #e5e7eb;
-  border-radius: 4px;
   text-align: center;
 }
 
@@ -24,6 +23,7 @@
 
 .cart--card h1 {
   font-size: medium;
+  color: black;
 }
 
 .cart--card h2 {
@@ -32,7 +32,7 @@
 }
 
 .cart--card:hover {
-  -webkit-box-shadow: 0 10px 15px -3px #d1d5db, 0 4px 6px -4px #d1d5db;
-          box-shadow: 0 10px 15px -3px #d1d5db, 0 4px 6px -4px #d1d5db;
+  -webkit-box-shadow: 0 10px 25px -3px #0d47a1, 0 4px 6px -4px #0d47a1;
+          box-shadow: 0 10px 25px -3px #0d47a1, 0 4px 6px -4px #0d47a1;
 }
 /*# sourceMappingURL=Cart.css.map */

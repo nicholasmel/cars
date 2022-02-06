@@ -15,7 +15,6 @@
   border: 1px;
   border-style: solid;
   border-color: $cardborder;
-  border-radius: 4px;
   text-align: center;
 
   img {
@@ -25,6 +24,7 @@
 
   h1 {
     font-size: medium;
+    color: black;
   }
 
   h2 {
@@ -34,5 +34,5 @@
 }
 
 .cart--card:hover {
-  box-shadow: 0 10px 15px -3px $shadowgrey, 0 4px 6px -4px $shadowgrey;
+  box-shadow: 0 10px 25px -3px #0d47a1, 0 4px 6px -4px #0d47a1;
 }

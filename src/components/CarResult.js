@@ -4,7 +4,6 @@ import Card from './Card';
 import { cars } from '../data';
 import Cart from './Cart';
 import CloseIcon from '@mui/icons-material/Close';
-import Navbar from './Navbar';
 
 
 function CarResult() {
@@ -31,6 +30,15 @@ function CarResult() {
 
     return (
         <div className='results'>
+            <div className="results--banner">
+                <p>RESULTS: {cars.length}</p>
+                <div className={sidebar ? 'results--banner-right-active' : 'results--banner-right'}>
+                    <h4>LOCATION:</h4>
+                    <p>PEORIA, AZ</p>
+                    <h4>SORT BY:</h4>
+                    <p>RECOMMENDED</p>
+                </div>
+            </div>
             <div className={sidebar ? 'car-active' : 'car'}>
                 {cars.map((car, id) => (
                     <Card key={id} image={car.img} title={car.title} model={car.model} miles={car.miles} price={car.price} monthly={car.monthly} button={() => addToCart(car)} />
@@ -38,7 +46,7 @@ function CarResult() {
             </div>
             <div className={sidebar ? 'cart--item-active' : 'cart--item'}>
                 <div className='cart--close' onClick={leaveSidebar}>
-                    <CloseIcon sx={{ fontSize: '50px', color: '#5c6bc0' }} />
+                    <CloseIcon sx={{ fontSize: '50px', color: 'white' }} />
                 </div>
                 <h1>Shopping Cart</h1>
                 <div className='cart--item-card'>
@@ -52,7 +60,7 @@ function CarResult() {
                 </div>
             </div>
 
-        </div>
+        </div >
 
     );
 }
