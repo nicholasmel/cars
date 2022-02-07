@@ -2,11 +2,12 @@ $iconpadding: 0 40px;
 $iconopacity: 0.8;
 
 .footer {
-  height: 20vh;
+  height: 40vh;
   width: auto;
   background-color: #01579b;
-  padding: 100px 0px 0px 120px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer--linkedin {

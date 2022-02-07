@@ -1,3 +1,7 @@
+.results {
+  background-color: #f5f5f5;
+}
+
 .results--banner {
   height: auto;
   width: auto;
@@ -164,5 +168,10 @@
   width: auto;
   font-size: 12px;
   color: #f5f5f5;
+}
+
+hr {
+  border-top: 2px solid #1565c0e8;
+  margin: 0px 4vw;
 }
 /*# sourceMappingURL=CarResult.css.map */

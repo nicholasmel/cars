@@ -1,6 +1,6 @@
 import React from 'react';
 import "../styles/Navbar.css";
-import logo from '../images/GR_logo.svg'
+import logo from '../images/car-icon.png'
 
 function Navbar() {
     return (

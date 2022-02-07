@@ -9,14 +9,14 @@ export const sliderdata = [
     },
     {
         id: 3,
-        img: 'https://toyota.scene7.com/is/image/toyota/086_MY22_0002_V001-1?wid=2000&fmt=jpg&fit=crop',
+        img: 'https://www.audiusa.com/content/dam/nemo/us/models/R8/R8-Coupe/MY22/1920x1080/1920x1080-MY20-R8-Coupe-Ext_Side-Angle_Ascari-blue.jpg?downsize=1440px:*',
     },
     {
         id: 4,
-        img: 'https://toyota.scene7.com/is/image/toyota/SUP_MY21_0035_V001?wid=2000&fmt=jpg&fit=crop',
+        img: 'https://www.bmwusa.com/content/dam/bmwusa/limited-edition/m2-cs/desktop/BMW-SOC21-M2CS-Limited-Edition-Hero-Desktop.jpg',
     },
     {
         id: 5,
-        img: 'https://toyota.scene7.com/is/image/toyota/TAC_MY22_0012_V001_masthead?fmt=jpg&fit=crop&qlt=90&hei=660',
+        img: 'https://www.toyota.com/content/dam/toyota/vehicles/2022/gr-supra/features/SUP_MY20_0105_V001_tout.png?wid=768&fmt=jpg&fit=crop',
     },
 ]
