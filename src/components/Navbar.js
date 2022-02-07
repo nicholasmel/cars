@@ -3,9 +3,17 @@ import "../styles/Navbar.css";
 import logo from '../images/car-icon.png'
 
 function Navbar() {
+
+    const scrollTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        });
+    };
+
     return (
         <div className="navbar">
-            <div className="navbar--left">
+            <div className="navbar--left" onClick={scrollTop}>
                 <img src={logo} alt="" />
             </div>
             <div className="navbar--middle">

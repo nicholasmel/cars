@@ -60,9 +60,7 @@ function CarResult() {
                 </div>
             </div>
             <hr />
-
         </div >
-
     );
 }
 
