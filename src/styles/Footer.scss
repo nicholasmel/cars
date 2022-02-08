@@ -1,9 +1,9 @@
-$iconpadding: 0 40px;
+$iconpadding: 40px;
 $iconopacity: 0.8;
 
 .footer {
   height: 40vh;
-  width: auto;
+  width: 100vw;
   background-color: #01579b;
   display: flex;
   justify-content: center;
@@ -13,8 +13,8 @@ $iconopacity: 0.8;
 .footer--linkedin {
   height: 50px;
   width: auto;
-  padding: $iconpadding;
   opacity: $iconopacity;
+  padding-right: $iconpadding;
 
   &:hover {
     opacity: 1;
@@ -25,6 +25,7 @@ $iconopacity: 0.8;
   height: 50px;
   padding-top: 3px;
   opacity: $iconopacity;
+  padding-right: $iconpadding;
 
   &:hover {
     opacity: 1;
@@ -33,8 +34,8 @@ $iconopacity: 0.8;
 
 .footer--email {
   height: 50px;
-  padding: $iconpadding;
   opacity: $iconopacity;
+  padding-right: $iconpadding;
 
   &:hover {
     opacity: 1;

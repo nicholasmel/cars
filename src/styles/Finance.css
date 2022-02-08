@@ -17,6 +17,7 @@
 .finance h1 {
   text-align: center;
   font-weight: 400;
+  padding-bottom: 4vh;
 }
 
 .finance--limited {
@@ -34,6 +35,8 @@
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 10vh;
+  -webkit-transition: 1500ms;
+  transition: 1500ms;
 }
 
 .finance--limited h2 {
@@ -43,6 +46,24 @@
 .finance--limited img {
   height: auto;
   width: 34vw;
+  -webkit-transition: 1500ms;
+  transition: 1500ms;
+  z-index: 0;
+}
+
+.finance--limited:hover img {
+  -webkit-transition: 1500ms;
+  transition: 1500ms;
+  -webkit-transform: translateX(18vw);
+          transform: translateX(18vw);
+  opacity: 0;
+}
+
+.finance--limited:hover .finance--calculator {
+  -webkit-transition: 1500ms;
+  transition: 1500ms;
+  -webkit-transform: translateX(-18vw);
+          transform: translateX(-18vw);
 }
 
 .finance--calculator {
@@ -59,6 +80,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 1500ms;
+  transition: 1500ms;
+  cursor: pointer;
 }
 
 .finance--calculator h1,

@@ -13,6 +13,7 @@
   h1 {
     text-align: center;
     font-weight: 400;
+    padding-bottom: 4vh;
   }
 }
 
@@ -25,6 +26,7 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 10vh;
+  transition: 1500ms;
 
   h2 {
     font-weight: 400;
@@ -33,6 +35,21 @@
   img {
     height: auto;
     width: 34vw;
+    transition: 1500ms;
+    z-index: 0;
+  }
+
+  &:hover {
+    img {
+      transition: 1500ms;
+      transform: translateX(18vw);
+      opacity: 0;
+    }
+
+    .finance--calculator {
+      transition: 1500ms;
+      transform: translateX(-18vw);
+    }
   }
 }
 
@@ -45,6 +62,8 @@
   border-radius: 4px;
   justify-content: center;
   align-items: center;
+  transition: 1500ms;
+  cursor: pointer;
 
   h1,
   h2 {

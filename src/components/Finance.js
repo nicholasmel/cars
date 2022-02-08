@@ -49,7 +49,7 @@ function Finance() {
         let interest = loan * (apr * .01);
         let total = loan + interest;
         let final = Math.round(total / term);
-        return `Finance for $${final}/month`;
+        return `Finance for \n $${final}/month`;
     }
 
     return (

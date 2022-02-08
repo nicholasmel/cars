@@ -1,6 +1,6 @@
 .footer {
   height: 40vh;
-  width: auto;
+  width: 100vw;
   background-color: #01579b;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,8 +16,8 @@
 .footer--linkedin {
   height: 50px;
   width: auto;
-  padding: 0 40px;
   opacity: 0.8;
+  padding-right: 40px;
 }
 
 .footer--linkedin:hover {
@@ -28,6 +28,7 @@
   height: 50px;
   padding-top: 3px;
   opacity: 0.8;
+  padding-right: 40px;
 }
 
 .footer--github:hover {
@@ -36,8 +37,8 @@
 
 .footer--email {
   height: 50px;
-  padding: 0 40px;
   opacity: 0.8;
+  padding-right: 40px;
 }
 
 .footer--email:hover {
