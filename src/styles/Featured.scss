@@ -1,0 +1,111 @@
+@import "../variables/variables.scss";
+
+.featured {
+  height: auto;
+  width: auto;
+  background-color: $bgcolor;
+  padding-top: 2px;
+  transition: 1000ms;
+
+  h1 {
+    text-align: center;
+    font-weight: 400;
+  }
+}
+
+.featured-limited {
+  background-color: $bgcolor;
+  padding: 2px 60px;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+
+  h2 {
+    font-weight: 400;
+  }
+}
+
+.featured--format {
+  display: grid;
+  grid-template-columns: 3;
+  grid-template-rows: 1;
+  height: 50vh;
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: $bgcolor;
+  gap: 6px;
+  grid-template-areas: "item-one item-two item-three";
+  overflow: hidden;
+  box-shadow: 0 10px 12px -3px #26323825, 0 4px 6px 6px #2632381e;
+}
+
+.item-one {
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease;
+  overflow: hidden;
+
+  &:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+    margin-right: 3vw;
+  }
+}
+
+.item--two {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+  overflow: hidden;
+  gap: 6px;
+  box-shadow: 0 10px 12px -3px #26323825, 0 4px 6px 6px #2632381e;
+}
+
+.item-top {
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease;
+  overflow: hidden;
+  box-shadow: 0 10px 12px -3px #26323825, 0 4px 6px 6px #2632381e;
+
+  &:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+    margin-bottom: 2.4vh;
+  }
+}
+
+.item-bottom {
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.5s ease;
+  overflow: hidden;
+
+  &:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+    margin-top: 2.4vh;
+  }
+}
+
+.item-three {
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  transition: all 0.5s ease;
+
+  &:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+    margin-left: 3vw;
+  }
+}
+
+.featured--bottom {
+  padding-bottom: 20px;
+}
+
+.hr-line {
+  border-top: 2px solid #1565c0e8;
+  margin: 50px 4vw 0px 4vw;
+}

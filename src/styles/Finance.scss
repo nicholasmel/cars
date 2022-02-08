@@ -1,0 +1,53 @@
+@import "../variables/variables.scss";
+
+.finance {
+  height: auto;
+  width: auto;
+  background-color: $bgcolor;
+  padding-top: 2px;
+  transition: 1000ms;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+  h1 {
+    text-align: center;
+    font-weight: 400;
+  }
+}
+
+.finance--limited {
+  display: flex;
+  background-color: $bgcolor;
+  padding: 2px 60px;
+  height: auto;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10vh;
+
+  h2 {
+    font-weight: 400;
+  }
+
+  img {
+    height: auto;
+    width: 30vw;
+  }
+}
+
+.finance--calculator {
+  height: auto;
+  width: 40vw;
+  background-color: #1565c0;
+  box-shadow: 0 10px 12px -3px #26323825, 0 4px 6px 6px #2632381e;
+  border-style: line;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+
+  h1,
+  h2 {
+    color: white;
+  }
+}

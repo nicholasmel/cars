@@ -1,0 +1,68 @@
+.finance {
+  height: auto;
+  width: auto;
+  background-color: #f3f4f6;
+  padding-top: 2px;
+  -webkit-transition: 1000ms;
+  transition: 1000ms;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.finance h1 {
+  text-align: center;
+  font-weight: 400;
+}
+
+.finance--limited {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f3f4f6;
+  padding: 2px 60px;
+  height: auto;
+  width: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10vh;
+}
+
+.finance--limited h2 {
+  font-weight: 400;
+}
+
+.finance--limited img {
+  height: auto;
+  width: 30vw;
+}
+
+.finance--calculator {
+  height: auto;
+  width: 40vw;
+  background-color: #1565c0;
+  -webkit-box-shadow: 0 10px 12px -3px #26323825, 0 4px 6px 6px #2632381e;
+          box-shadow: 0 10px 12px -3px #26323825, 0 4px 6px 6px #2632381e;
+  border-style: line;
+  border-radius: 4px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.finance--calculator h1,
+.finance--calculator h2 {
+  color: white;
+}
+/*# sourceMappingURL=Finance.css.map */

@@ -59,7 +59,7 @@ function CarResult() {
                     <h1>Subtotal({cart.length}): {currencyFormat(price)}</h1>
                 </div>
             </div>
-            <hr />
+            <hr className='hr-line' />
         </div >
     );
 }

@@ -17,9 +17,9 @@ function Navbar() {
                 <img src={logo} alt="" />
             </div>
             <div className="navbar--middle">
+                <p>VIEW CARS</p>
                 <p>FEATURED CARS</p>
-                <p>FIND CARS</p>
-                <p>FINANCING</p>
+                <p>FINANCE</p>
             </div>
             <div className="navbar--right">
                 <p>SIGN IN</p>
