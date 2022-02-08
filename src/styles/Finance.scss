@@ -32,7 +32,7 @@
 
   img {
     height: auto;
-    width: 30vw;
+    width: 34vw;
   }
 }
 
@@ -49,5 +49,12 @@
   h1,
   h2 {
     color: white;
+    padding-bottom: 2vh;
   }
+}
+
+.finance--input {
+  height: auto;
+  width: auto;
+  padding: 0px 20px;
 }

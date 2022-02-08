@@ -42,7 +42,7 @@
 
 .finance--limited img {
   height: auto;
-  width: 30vw;
+  width: 34vw;
 }
 
 .finance--calculator {
@@ -64,5 +64,12 @@
 .finance--calculator h1,
 .finance--calculator h2 {
   color: white;
+  padding-bottom: 2vh;
+}
+
+.finance--input {
+  height: auto;
+  width: auto;
+  padding: 0px 20px;
 }
 /*# sourceMappingURL=Finance.css.map */
