@@ -12,14 +12,18 @@
 
   h1 {
     text-align: center;
-    font-weight: 400;
-    padding-bottom: 4vh;
+    font-weight: 700;
+  }
+
+  p {
+    color: rgb(109, 109, 109);
   }
 }
 
 .finance--limited {
   display: flex;
   background-color: $bgcolor;
+  margin-top: 40px;
   padding: 2px 60px;
   height: auto;
   width: auto;
@@ -35,19 +39,20 @@
   img {
     height: auto;
     width: 34vw;
-    transition: 1500ms;
+    transition: 1200ms;
+    transition-delay: 3s;
     z-index: 0;
   }
 
   &:hover {
     img {
-      transition: 1500ms;
+      transition: 1200ms;
       transform: translateX(18vw);
       opacity: 0;
     }
 
     .finance--calculator {
-      transition: 1500ms;
+      transition: 1200ms;
       transform: translateX(-18vw);
     }
   }
@@ -62,18 +67,33 @@
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-  transition: 1500ms;
+  transition: 1200ms;
+  transition-delay: 3s;
   cursor: pointer;
+  left: 0;
 
-  h1,
+  h1 {
+    color: white;
+    font-weight: 300;
+  }
   h2 {
     color: white;
-    padding-bottom: 2vh;
+    font-weight: 300;
+  }
+  h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 4vh;
   }
 }
 
 .finance--input {
   height: auto;
   width: auto;
-  padding: 0px 20px;
+  margin: 2vw;
+
+  p {
+    color: white;
+    margin: 0;
+  }
 }

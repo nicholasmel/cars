@@ -16,8 +16,11 @@
 
 .finance h1 {
   text-align: center;
-  font-weight: 400;
-  padding-bottom: 4vh;
+  font-weight: 700;
+}
+
+.finance p {
+  color: #6d6d6d;
 }
 
 .finance--limited {
@@ -25,6 +28,7 @@
   display: -ms-flexbox;
   display: flex;
   background-color: #f3f4f6;
+  margin-top: 40px;
   padding: 2px 60px;
   height: auto;
   width: auto;
@@ -46,22 +50,24 @@
 .finance--limited img {
   height: auto;
   width: 34vw;
-  -webkit-transition: 1500ms;
-  transition: 1500ms;
+  -webkit-transition: 1200ms;
+  transition: 1200ms;
+  -webkit-transition-delay: 3s;
+          transition-delay: 3s;
   z-index: 0;
 }
 
 .finance--limited:hover img {
-  -webkit-transition: 1500ms;
-  transition: 1500ms;
+  -webkit-transition: 1200ms;
+  transition: 1200ms;
   -webkit-transform: translateX(18vw);
           transform: translateX(18vw);
   opacity: 0;
 }
 
 .finance--limited:hover .finance--calculator {
-  -webkit-transition: 1500ms;
-  transition: 1500ms;
+  -webkit-transition: 1200ms;
+  transition: 1200ms;
   -webkit-transform: translateX(-18vw);
           transform: translateX(-18vw);
 }
@@ -80,20 +86,38 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 1500ms;
-  transition: 1500ms;
+  -webkit-transition: 1200ms;
+  transition: 1200ms;
+  -webkit-transition-delay: 3s;
+          transition-delay: 3s;
   cursor: pointer;
+  left: 0;
 }
 
-.finance--calculator h1,
+.finance--calculator h1 {
+  color: white;
+  font-weight: 300;
+}
+
 .finance--calculator h2 {
   color: white;
-  padding-bottom: 2vh;
+  font-weight: 300;
+}
+
+.finance--calculator h3 {
+  color: white;
+  font-weight: 600;
+  font-size: 4vh;
 }
 
 .finance--input {
   height: auto;
   width: auto;
-  padding: 0px 20px;
+  margin: 2vw;
+}
+
+.finance--input p {
+  color: white;
+  margin: 0;
 }
 /*# sourceMappingURL=Finance.css.map */

@@ -41,7 +41,6 @@ function Finance() {
         setTrade(event.target.value);
     };
 
-
     const calculateFinance = () => {
         let msrp = Number(price);
         let off = Number(cash) + Number(trade);
@@ -49,13 +48,14 @@ function Finance() {
         let interest = loan * (apr * .01);
         let total = loan + interest;
         let final = Math.round(total / term);
-        return `Finance for \n $${final}/month`;
+        return final;
     }
 
     return (
         <div className='finance'>
             <div className="featured--title">
                 <h1>PAYMENT ESTIMATOR</h1>
+                <p>Use the payment estimator tool to asses your payment options</p>
             </div>
             <div className="finance--limited" >
                 <img src={pay} alt=""></img>
@@ -64,7 +64,7 @@ function Finance() {
                     <div className="finance--input">
                         <FormControl sx={{ m: 1, width: '25vw' }}>
                             <OutlinedInput onChange={handlePriceChange} sx={{ backgroundColor: 'white' }} placeholder="$63,379" />
-                            <FormHelperText sx={{ color: 'white' }}>Vehicle Price</FormHelperText>
+                            <FormHelperText>Vehicle Price</FormHelperText>
                         </FormControl>
                         <FormControl sx={{ m: 1, width: '12vw' }}>
                             <InputLabel id="demo-simple-select-helper-label">Credit</InputLabel>
@@ -74,7 +74,7 @@ function Finance() {
                                 value={credit}
                                 label="Credit"
                                 onChange={handleCreditChange}
-                                sx={{ backgroundColor: 'white' }}
+                                sx={{ backgroundColor: 'white', textAlign: 'left' }}
                             >
                                 <MenuItem value={10}>Excellent 720+</MenuItem>
                                 <MenuItem value={20}>Great 719-690</MenuItem>
@@ -85,11 +85,11 @@ function Finance() {
                                 <MenuItem value={70}>Very Poor 609-580</MenuItem>
                                 <MenuItem value={80}>Extremely Poor 579-520</MenuItem>
                             </Select>
-                            <FormHelperText sx={{ color: 'white' }}>Estimated Credit Score</FormHelperText>
+                            <FormHelperText>Estimated Credit Score</FormHelperText>
                         </FormControl>
                         <FormControl sx={{ m: 1, width: '12vw' }}>
                             <OutlinedInput onChange={handleCashChange} sx={{ backgroundColor: 'white' }} placeholder="$2000" />
-                            <FormHelperText sx={{ color: 'white' }}>Cash Down</FormHelperText>
+                            <FormHelperText>Cash Down</FormHelperText>
                         </FormControl>
                         <FormControl sx={{ m: 1, width: '12vw' }}>
                             <InputLabel id="demo-simple-select-helper-label">Term</InputLabel>
@@ -99,7 +99,7 @@ function Finance() {
                                 value={term}
                                 label="Term"
                                 onChange={handleTermChange}
-                                sx={{ backgroundColor: 'white' }}
+                                sx={{ backgroundColor: 'white', textAlign: 'left' }}
                             >
                                 <MenuItem value={24}>24 Months</MenuItem>
                                 <MenuItem value={36}>36 Months</MenuItem>
@@ -107,18 +107,19 @@ function Finance() {
                                 <MenuItem value={60}>60 Months</MenuItem>
                                 <MenuItem value={72}>72 Months</MenuItem>
                             </Select>
-                            <FormHelperText sx={{ color: 'white' }}>Term Length</FormHelperText>
+                            <FormHelperText>Term Length</FormHelperText>
                         </FormControl>
                         <FormControl sx={{ m: 1, width: '12vw' }}>
                             <OutlinedInput onChange={handleAprChange} sx={{ backgroundColor: 'white' }} placeholder="4.19%" />
-                            <FormHelperText sx={{ color: 'white' }}>Estimated APR</FormHelperText>
+                            <FormHelperText>Estimated APR</FormHelperText>
                         </FormControl>
                         <FormControl sx={{ m: 1, width: '12vw' }}>
                             <OutlinedInput onChange={handleTradeChange} sx={{ backgroundColor: 'white' }} placeholder="$0" />
-                            <FormHelperText sx={{ color: 'white' }}>Estimated Trade-In Value</FormHelperText>
+                            <FormHelperText>Estimated Trade-In Value</FormHelperText>
                         </FormControl>
                     </div>
-                    <h2>{calculateFinance()}</h2>
+                    <h2>Finance for</h2>
+                    <h3>${calculateFinance()}/month</h3>
                 </div>
             </div >
 
