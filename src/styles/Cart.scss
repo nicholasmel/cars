@@ -5,6 +5,7 @@
   width: auto;
   background-color: $bgcolor;
   margin-bottom: 20px;
+  transition: 1200ms;
 }
 
 .cart--card {
@@ -16,6 +17,7 @@
   border-style: solid;
   border-color: $cardborder;
   text-align: center;
+  transition: 1200ms;
 
   img {
     height: auto;

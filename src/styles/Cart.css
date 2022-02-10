@@ -3,6 +3,8 @@
   width: auto;
   background-color: #f3f4f6;
   margin-bottom: 20px;
+  -webkit-transition: 1200ms;
+  transition: 1200ms;
 }
 
 .cart--card {
@@ -14,6 +16,8 @@
   border-style: solid;
   border-color: #e5e7eb;
   text-align: center;
+  -webkit-transition: 1200ms;
+  transition: 1200ms;
 }
 
 .cart--card img {

@@ -11,10 +11,10 @@ import FormHelperText from '@mui/material/FormHelperText';
 
 function Finance() {
     const [price, setPrice] = useState(63379);
-    const [credit, setCredit] = useState(10);
+    const [credit, setCredit] = useState(4.19);
     const [term, setTerm] = useState(72);
     const [cash, setCash] = useState(2000);
-    const [apr, setApr] = useState(4.19);
+    const [apr, setApr] = useState(0);
     const [trade, setTrade] = useState(0);
 
     const handlePriceChange = (event) => {
@@ -33,10 +33,6 @@ function Finance() {
         setCash(event.target.value);
     };
 
-    const handleAprChange = (event) => {
-        setApr(event.target.value);
-    };
-
     const handleTradeChange = (event) => {
         setTrade(event.target.value);
     };
@@ -45,10 +41,10 @@ function Finance() {
         let msrp = Number(price);
         let off = Number(cash) + Number(trade);
         let loan = msrp - off;
-        let interest = loan * (apr * .01);
+        let interest = loan * (credit * .01);
         let total = loan + interest;
         let final = Math.round(total / term);
-        return final;
+        return (Number.isNaN(final) ? 0 : final);
     }
 
     return (
@@ -76,14 +72,14 @@ function Finance() {
                                 onChange={handleCreditChange}
                                 sx={{ backgroundColor: 'white', textAlign: 'left' }}
                             >
-                                <MenuItem value={10}>Excellent 720+</MenuItem>
-                                <MenuItem value={20}>Great 719-690</MenuItem>
-                                <MenuItem value={30}>Very Good 689-670</MenuItem>
-                                <MenuItem value={40}>Good 669-650</MenuItem>
-                                <MenuItem value={50}>Fair 649-630</MenuItem>
-                                <MenuItem value={60}>Poor 629-610</MenuItem>
-                                <MenuItem value={70}>Very Poor 609-580</MenuItem>
-                                <MenuItem value={80}>Extremely Poor 579-520</MenuItem>
+                                <MenuItem value={4.19}>Excellent 720+</MenuItem>
+                                <MenuItem value={5.2}>Great 719-690</MenuItem>
+                                <MenuItem value={7.69}>Very Good 689-670</MenuItem>
+                                <MenuItem value={7.95}>Good 669-650</MenuItem>
+                                <MenuItem value={8.85}>Fair 649-630</MenuItem>
+                                <MenuItem value={11.5}>Poor 629-610</MenuItem>
+                                <MenuItem value={14.95}>Very Poor 609-580</MenuItem>
+                                <MenuItem value={19.5}>Extremely Poor 579-520</MenuItem>
                             </Select>
                             <FormHelperText>Estimated Credit Score</FormHelperText>
                         </FormControl>
@@ -110,7 +106,7 @@ function Finance() {
                             <FormHelperText>Term Length</FormHelperText>
                         </FormControl>
                         <FormControl sx={{ m: 1, width: '12vw' }}>
-                            <OutlinedInput onChange={handleAprChange} sx={{ backgroundColor: 'white' }} placeholder="4.19%" />
+                            <OutlinedInput sx={{ backgroundColor: 'white' }} value={credit + '%'} />
                             <FormHelperText>Estimated APR</FormHelperText>
                         </FormControl>
                         <FormControl sx={{ m: 1, width: '12vw' }}>

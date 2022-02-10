@@ -161,6 +161,8 @@
 
 .cart--item-card {
   margin: 20px 50px;
+  -webkit-transition: 1200ms;
+  transition: 1200ms;
 }
 
 .cart--total {
