@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/cars/static/css/main.35b77a4b.css",
+    "main.js": "/cars/static/js/main.fca44c17.js",
+    "static/js/787.121a0e85.chunk.js": "/cars/static/js/787.121a0e85.chunk.js",
+    "static/media/audi4.png": "/cars/static/media/audi4.5c5b5413e1ce04eec62c.png",
+    "static/media/audi1.png": "/cars/static/media/audi1.7f0a419d213d48719509.png",
+    "static/media/bluesupra1.png": "/cars/static/media/bluesupra1.7bcb1d35fccdf0b65d13.png",
+    "static/media/bluesupra4.png": "/cars/static/media/bluesupra4.ea2178614f105c4d1870.png",
+    "static/media/gtr4.png": "/cars/static/media/gtr4.309211581220c78fa801.png",
+    "static/media/gtr1.png": "/cars/static/media/gtr1.e1d5d4ecbc503f2fb41a.png",
+    "static/media/bmw4.png": "/cars/static/media/bmw4.0991f8634e57986d2ac2.png",
+    "static/media/yellowsupra1.png": "/cars/static/media/yellowsupra1.ad4c1ffd21abbae984fe.png",
+    "static/media/bmw1.png": "/cars/static/media/bmw1.e423761b012090ffbc10.png",
+    "static/media/suprapay.png": "/cars/static/media/suprapay.bd8a1f3fb0b5964dca69.png",
+    "static/media/whitesupra1.png": "/cars/static/media/whitesupra1.44a2864bbaa90158e22f.png",
+    "static/media/lunarrocktacoma1.png": "/cars/static/media/lunarrocktacoma1.41eb9b2fba1d5f95e522.png",
+    "static/media/yellowsupra4.png": "/cars/static/media/yellowsupra4.92848e70810a764f6c91.png",
+    "static/media/whitesupra4.png": "/cars/static/media/whitesupra4.a16138b985fa62c40b22.png",
+    "static/media/lunarrocktacoma4.png": "/cars/static/media/lunarrocktacoma4.a110ea091097756235e2.png",
+    "static/media/blueis1.jpg": "/cars/static/media/blueis1.0b6159f60ee8afe0e4a5.jpg",
+    "static/media/blackrcf1.jpg": "/cars/static/media/blackrcf1.329ec43cdcbd9d560798.jpg",
+    "static/media/blueis4.jpg": "/cars/static/media/blueis4.8f638c9e1c34456863a1.jpg",
+    "static/media/blackrcf4.jpg": "/cars/static/media/blackrcf4.3ea2b94e3e931cdd329d.jpg",
+    "static/media/car-icon.png": "/cars/static/media/car-icon.e5bc43f9a5cbb9033e8d.png",
+    "index.html": "/cars/index.html",
+    "main.35b77a4b.css.map": "/cars/static/css/main.35b77a4b.css.map",
+    "main.fca44c17.js.map": "/cars/static/js/main.fca44c17.js.map",
+    "787.121a0e85.chunk.js.map": "/cars/static/js/787.121a0e85.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.35b77a4b.css",
+    "static/js/main.fca44c17.js"
+  ]
+}
