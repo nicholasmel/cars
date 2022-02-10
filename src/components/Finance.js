@@ -14,7 +14,6 @@ function Finance() {
     const [credit, setCredit] = useState(4.19);
     const [term, setTerm] = useState(72);
     const [cash, setCash] = useState(2000);
-    const [apr, setApr] = useState(0);
     const [trade, setTrade] = useState(0);
 
     const handlePriceChange = (event) => {

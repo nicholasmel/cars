@@ -1,7 +1,6 @@
 import React from 'react';
 import "../styles/Navbar.css";
 import logo from '../images/car-icon.png'
-import { useRef } from 'react';
 
 function Navbar() {
 
