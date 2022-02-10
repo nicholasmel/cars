@@ -14,7 +14,7 @@
   padding: 8px 0px;
   border: 1px;
   border-style: solid;
-  border-color: #e5e7eb;
+  border-color: #eeeeee;
   text-align: center;
   -webkit-transition: 1200ms;
   transition: 1200ms;
@@ -26,8 +26,8 @@
 }
 
 .cart--card h1 {
+  color: #212121;
   font-size: medium;
-  color: black;
 }
 
 .cart--card h2 {

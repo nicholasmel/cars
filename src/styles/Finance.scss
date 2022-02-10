@@ -5,7 +5,7 @@
   width: auto;
   background-color: $bgcolor;
   padding-top: 2px;
-  transition: 1000ms;
+  transition: $transition;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -16,21 +16,20 @@
   }
 
   p {
-    color: rgb(109, 109, 109);
+    color: $darkmediumtext;
   }
 }
 
-.finance--limited {
+.finance--content {
   display: flex;
-  background-color: $bgcolor;
-  margin-top: 40px;
-  padding: 2px 60px;
   height: auto;
   width: auto;
+  background-color: $bgcolor;
+  margin-top: 40px;
   justify-content: center;
   align-items: center;
   padding-bottom: 10vh;
-  transition: 1500ms;
+  transition: $transition;
 
   h2 {
     font-weight: 400;
@@ -39,20 +38,20 @@
   img {
     height: auto;
     width: 34vw;
-    transition: 1200ms;
+    transition: $transition;
     transition-delay: 3s;
     z-index: 0;
   }
 
   &:hover {
     img {
-      transition: 1200ms;
+      transition: $transition;
       transform: translateX(18vw);
       opacity: 0;
     }
 
     .finance--calculator {
-      transition: 1200ms;
+      transition: $transition;
       transform: translateX(-18vw);
     }
   }
@@ -61,27 +60,28 @@
 .finance--calculator {
   height: auto;
   width: 40vw;
-  background-color: #1565c0;
-  box-shadow: 0 10px 12px -3px #26323825, 0 4px 6px 6px #2632381e;
+  min-width: 400px;
+  background-color: $navcolor;
   border-style: line;
   border-radius: 4px;
   justify-content: center;
   align-items: center;
-  transition: 1200ms;
+  transition: $transition;
   transition-delay: 3s;
   cursor: pointer;
-  left: 0;
+  box-shadow: $cardshadow;
 
   h1 {
-    color: white;
+    color: $lighttext;
     font-weight: 300;
+    font-size: 5vh;
   }
   h2 {
-    color: white;
+    color: $lighttext;
     font-weight: 300;
   }
   h3 {
-    color: white;
+    color: $lighttext;
     font-weight: 600;
     font-size: 4vh;
   }
@@ -93,7 +93,7 @@
   margin: 2vw;
 
   p {
-    color: white;
+    color: $lighttext;
     margin: 0;
   }
 }

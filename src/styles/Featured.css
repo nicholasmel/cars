@@ -1,10 +1,11 @@
 .featured {
   height: auto;
   width: auto;
-  background-color: #f3f4f6;
+  background-color: #f5f5f5;
   padding-top: 2px;
-  -webkit-transition: 1000ms;
-  transition: 1000ms;
+  -webkit-transition: 1200ms;
+  transition: 1200ms;
+  color: #212121;
 }
 
 .featured h1 {
@@ -13,10 +14,10 @@
 }
 
 .featured-limited {
-  background-color: #f3f4f6;
-  padding: 2px 60px;
   height: auto;
   width: auto;
+  background-color: #f5f5f5;
+  padding: 2px 60px;
   overflow: hidden;
 }
 
@@ -31,15 +32,15 @@
       grid-template-columns: 3;
   -ms-grid-rows: 1;
       grid-template-rows: 1;
-  height: 50vh;
-  width: 100%;
-  margin-bottom: 20px;
-  background-color: #f3f4f6;
   gap: 6px;
       grid-template-areas: "item-one item-two item-three";
+  height: 50vh;
+  width: 100%;
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
   overflow: hidden;
-  -webkit-box-shadow: 0 10px 12px -3px #26323825, 0 4px 6px 6px #2632381e;
-          box-shadow: 0 10px 12px -3px #26323825, 0 4px 6px 6px #2632381e;
+  -webkit-box-shadow: 0 10px 15px -3px #d1d5db, 0 4px 6px -4px #d1d5db;
+          box-shadow: 0 10px 15px -3px #d1d5db, 0 4px 6px -4px #d1d5db;
 }
 
 .item-one {
@@ -48,7 +49,6 @@
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   overflow: hidden;
-  color: white;
   text-align: center;
 }
 
@@ -67,10 +67,8 @@
       grid-template-columns: 1;
   -ms-grid-rows: 2;
       grid-template-rows: 2;
-  overflow: hidden;
   gap: 6px;
-  -webkit-box-shadow: 0 10px 12px -3px #26323825, 0 4px 6px 6px #2632381e;
-          box-shadow: 0 10px 12px -3px #26323825, 0 4px 6px 6px #2632381e;
+  overflow: hidden;
 }
 
 .item-top {
@@ -79,8 +77,6 @@
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   overflow: hidden;
-  -webkit-box-shadow: 0 10px 12px -3px #26323825, 0 4px 6px 6px #2632381e;
-          box-shadow: 0 10px 12px -3px #26323825, 0 4px 6px 6px #2632381e;
 }
 
 .item-top:hover {
@@ -128,7 +124,7 @@
 }
 
 .hr-line {
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #9e9e9e;
   margin: 50px 4vw 0px 4vw;
 }
 /*# sourceMappingURL=Featured.css.map */

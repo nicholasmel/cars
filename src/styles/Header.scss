@@ -4,7 +4,7 @@
   height: auto;
   width: 100vw;
   padding-top: 70px;
-  background-color: #1565c0;
+  background-color: $navcolor;
 
   img {
     width: 100%;
@@ -22,19 +22,21 @@
 
 .arrow--left {
   margin: 40px;
-  opacity: 0.8;
+  opacity: $lowopacity;
+
   &:hover {
     cursor: pointer;
-    opacity: 1;
+    opacity: $highopacity;
   }
 }
 
 .arrow-right {
   margin: 40px;
-  opacity: 0.8;
+  opacity: $lowopacity;
+
   &:hover {
     cursor: pointer;
-    opacity: 1;
+    opacity: $highopacity;
   }
 }
 

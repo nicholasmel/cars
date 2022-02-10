@@ -1,10 +1,9 @@
-$iconpadding: 40px;
-$iconopacity: 0.8;
+@import "../variables/variables.scss";
 
 .footer {
   height: 40vh;
-  width: 100vw;
-  background-color: #01579b;
+  width: 100%;
+  background-color: $bgfooter;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,31 +12,31 @@ $iconopacity: 0.8;
 .footer--linkedin {
   height: 50px;
   width: auto;
-  opacity: $iconopacity;
+  opacity: $lowopacity;
   padding-right: $iconpadding;
 
   &:hover {
-    opacity: 1;
+    opacity: $highopacity;
   }
 }
 
 .footer--github {
   height: 50px;
   padding-top: 3px;
-  opacity: $iconopacity;
+  opacity: $lowopacity;
   padding-right: $iconpadding;
 
   &:hover {
-    opacity: 1;
+    opacity: $highopacity;
   }
 }
 
 .footer--email {
   height: 50px;
-  opacity: $iconopacity;
+  opacity: $lowopacity;
   padding-right: $iconpadding;
 
   &:hover {
-    opacity: 1;
+    opacity: $highopacity;
   }
 }

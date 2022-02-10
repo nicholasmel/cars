@@ -5,6 +5,7 @@
 .results--banner {
   height: auto;
   width: auto;
+  background-color: #f5f5f5;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,7 +19,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f3f4f6;
   color: #1565c0;
   font-size: 12px;
   font-weight: 500;
@@ -37,7 +37,7 @@
 }
 
 .results--banner-right-active h4 {
-  color: grey;
+  color: #757575;
   padding-right: 8px;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .results--banner-right h4 {
-  color: grey;
+  color: #757575;
   padding-right: 8px;
 }
 
@@ -68,6 +68,7 @@
 .car {
   height: auto;
   width: auto;
+  background-color: #f5f5f5;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,7 +79,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #f3f4f6;
   -webkit-transition: 1200ms;
   transition: 1200ms;
   padding-bottom: 40px;
@@ -87,6 +87,7 @@
 .car-active {
   height: auto;
   width: auto;
+  background-color: #f5f5f5;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -98,42 +99,41 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #f3f4f6;
-  -webkit-transition: 1000ms;
-  transition: 1000ms;
+  -webkit-transition: 1200ms;
+  transition: 1200ms;
   padding-bottom: 40px;
 }
 
 .cart--item {
-  background-color: #f3f4f6;
   height: 100vh;
   width: 30vw;
+  background-color: #f5f5f5;
   position: fixed;
   top: 0;
   right: -100%;
   overflow-y: scroll;
-  -webkit-transition: 1500ms;
-  transition: 1500ms;
+  -webkit-transition: 1200ms;
+  transition: 1200ms;
 }
 
 .cart--item h1 {
   font-weight: 300;
   text-align: center;
   padding-top: 20px;
-  color: #f5f5f5;
+  color: #fafafa;
 }
 
 .cart--item-active {
-  background-color: #1565c0e8;
   height: 100vh;
   width: 30vw;
+  background-color: #1565c0e8;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 300;
   overflow-y: scroll;
-  -webkit-transition: 1000ms;
-  transition: 1000ms;
+  -webkit-transition: 1200ms;
+  transition: 1200ms;
   -webkit-box-shadow: 0 10px 15px -3px #263238da, 0 4px 6px -4px #263238da;
           box-shadow: 0 10px 15px -3px #263238da, 0 4px 6px -4px #263238da;
 }
@@ -142,7 +142,7 @@
   font-weight: 300;
   text-align: center;
   padding-top: 20px;
-  color: #f5f5f5;
+  color: #fafafa;
 }
 
 .cart--close {
@@ -151,8 +151,8 @@
   margin: 0;
   padding: 0;
   position: fixed;
-  -webkit-transition: 1350ms;
-  transition: 1350ms;
+  -webkit-transition: 1200ms;
+  transition: 1200ms;
 }
 
 .cart--close:hover {
@@ -169,11 +169,11 @@
   height: 100px;
   width: auto;
   font-size: 12px;
-  color: #f5f5f5;
+  color: #fafafa;
 }
 
 .hr-line {
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #9e9e9e;
   margin: 0px 4vw;
 }
 /*# sourceMappingURL=CarResult.css.map */

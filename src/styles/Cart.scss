@@ -5,7 +5,7 @@
   width: auto;
   background-color: $bgcolor;
   margin-bottom: 20px;
-  transition: 1200ms;
+  transition: $transition;
 }
 
 .cart--card {
@@ -17,7 +17,7 @@
   border-style: solid;
   border-color: $cardborder;
   text-align: center;
-  transition: 1200ms;
+  transition: $transition;
 
   img {
     height: auto;
@@ -25,8 +25,8 @@
   }
 
   h1 {
+    color: $darktext;
     font-size: medium;
-    color: black;
   }
 
   h2 {
@@ -36,5 +36,5 @@
 }
 
 .cart--card:hover {
-  box-shadow: 0 10px 25px -3px #0d47a1, 0 4px 6px -4px #0d47a1;
+  box-shadow: $cartshadow;
 }

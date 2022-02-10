@@ -28,7 +28,7 @@
 }
 
 .card:hover {
-  box-shadow: 0 10px 15px -3px $shadowgrey, 0 4px 6px -4px $shadowgrey;
+  box-shadow: $cardshadow;
 }
 
 .card--info {
@@ -84,7 +84,7 @@
     grid-column: 2;
     font-size: small;
     font-weight: 400;
-    color: $graymedium;
+    color: $mediumtext;
   }
 }
 

@@ -49,11 +49,11 @@ function Finance() {
 
     return (
         <div className='finance'>
-            <div className="featured--title">
+            <div className="finance--title">
                 <h1>PAYMENT ESTIMATOR</h1>
                 <p>Use the payment estimator tool to asses your payment options</p>
             </div>
-            <div className="finance--limited" >
+            <div className="finance--content" >
                 <img src={pay} alt=""></img>
                 <div className="finance--calculator">
                     <h1>Finance</h1>
