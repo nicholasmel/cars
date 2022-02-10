@@ -36,7 +36,7 @@ function CarResult() {
                     <h4>LOCATION:</h4>
                     <p>PEORIA, AZ</p>
                     <h4>SORT BY:</h4>
-                    <p>RECOMMENDED</p>
+                    <p>NEWEST INVENTORY</p>
                 </div>
             </div>
             <div className={sidebar ? 'car-active' : 'car'}>

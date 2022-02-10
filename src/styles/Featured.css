@@ -6,6 +6,7 @@
   -webkit-transition: 1200ms;
   transition: 1200ms;
   color: #212121;
+  scroll-margin-top: 70px;
 }
 
 .featured h1 {
