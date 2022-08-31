@@ -12,6 +12,17 @@
   text-align: center;
   justify-content: space-between;
   scroll-behavior: smooth;
+
+  @media (max-width: $mobile) {
+    height: 10vh;
+
+    .navbar--middle {
+      margin: 0 auto;
+      p {
+        font-size: large;
+      }
+    }
+  }
 }
 
 .navbar--left {
@@ -24,6 +35,10 @@
     height: 50px;
     color-adjust: unset;
     filter: brightness(180%);
+  }
+
+  @media (max-width: 780px) {
+    display: none;
   }
 }
 
@@ -60,5 +75,9 @@
     &:hover {
       color: $navhover;
     }
+  }
+
+  @media (max-width: 780px) {
+    display: none;
   }
 }

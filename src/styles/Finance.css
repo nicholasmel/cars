@@ -121,4 +121,24 @@
   color: #fafafa;
   margin: 0;
 }
+
+@media (max-width: 700px) {
+  .finance--input {
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    padding: 0px 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: 1200ms;
+    transition: 1200ms;
+    padding-bottom: 40px;
+  }
+}
 /*# sourceMappingURL=Finance.css.map */

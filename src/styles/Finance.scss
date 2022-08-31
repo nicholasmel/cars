@@ -97,4 +97,16 @@
     color: $lighttext;
     margin: 0;
   }
+
+  @media (max-width: $mobile) {
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    flex-flow: wrap;
+    padding: 0px 30px;
+    justify-content: center;
+    transition: $transition;
+    padding-bottom: 40px;
+  }
 }

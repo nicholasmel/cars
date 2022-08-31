@@ -24,6 +24,10 @@
 
   h2 {
     font-weight: 400;
+
+    @media (max-width: $mobile) {
+      text-align: center;
+    }
   }
 }
 
@@ -39,6 +43,24 @@
   margin-bottom: 20px;
   overflow: hidden;
   box-shadow: $cardshadow;
+
+  @media (max-width: $mobile) {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+    gap: 6px;
+    grid-template-areas: "item-one";
+    height: 60vh;
+    width: 100%;
+    background-color: $bgcolor;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: $cardshadow;
+
+    .item-two {
+      display: none;
+    }
+  }
 }
 
 .item-one {
@@ -55,7 +77,7 @@
   }
 }
 
-.item--two {
+.item-two {
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: 2;

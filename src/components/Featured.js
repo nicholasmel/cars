@@ -37,7 +37,7 @@ function Featured() {
                     <div className="featured--format">
                         <div className="item-one" style={{ backgroundImage: `url(${car.bgLeft})` }}>
                         </div>
-                        <div className="item--two">
+                        <div className="item-two">
                             <div className="item-top" style={{ backgroundImage: `url(${car.bgTop})` }}>
                             </div>
                             <div className="item-bottom" style={{ backgroundImage: `url(${car.bgBottom})` }}>
