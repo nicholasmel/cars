@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/cars/static/css/main.32272a26.css",
-    "main.js": "/cars/static/js/main.4c018aea.js",
+    "main.css": "/cars/static/css/main.f613eb5c.css",
+    "main.js": "/cars/static/js/main.ba1f602a.js",
     "static/js/787.121a0e85.chunk.js": "/cars/static/js/787.121a0e85.chunk.js",
     "static/media/audi4.png": "/cars/static/media/audi4.5c5b5413e1ce04eec62c.png",
     "static/media/audi1.png": "/cars/static/media/audi1.7f0a419d213d48719509.png",
@@ -24,12 +24,12 @@
     "static/media/blackrcf4.jpg": "/cars/static/media/blackrcf4.3ea2b94e3e931cdd329d.jpg",
     "static/media/car-icon.png": "/cars/static/media/car-icon.e5bc43f9a5cbb9033e8d.png",
     "index.html": "/cars/index.html",
-    "main.32272a26.css.map": "/cars/static/css/main.32272a26.css.map",
-    "main.4c018aea.js.map": "/cars/static/js/main.4c018aea.js.map",
+    "main.f613eb5c.css.map": "/cars/static/css/main.f613eb5c.css.map",
+    "main.ba1f602a.js.map": "/cars/static/js/main.ba1f602a.js.map",
     "787.121a0e85.chunk.js.map": "/cars/static/js/787.121a0e85.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.32272a26.css",
-    "static/js/main.4c018aea.js"
+    "static/css/main.f613eb5c.css",
+    "static/js/main.ba1f602a.js"
   ]
 }
