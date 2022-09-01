@@ -46,7 +46,7 @@
           filter: brightness(180%);
 }
 
-@media (max-width: 780px) {
+@media (max-width: 700px) {
   .navbar--left {
     display: none;
   }
@@ -92,7 +92,7 @@
   color: #03a9f4;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 700px) {
   .navbar--right {
     display: none;
   }

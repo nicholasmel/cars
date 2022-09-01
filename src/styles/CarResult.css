@@ -146,6 +146,21 @@
   color: #fafafa;
 }
 
+@media (max-width: 700px) {
+  .cart--item-active {
+    height: 80vh;
+    width: 50vw;
+    background-color: #1565c0e8;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 300;
+    overflow-y: scroll;
+    -webkit-transition: 1200ms;
+    transition: 1200ms;
+  }
+}
+
 .cart--close {
   width: 14%;
   opacity: 0.5;

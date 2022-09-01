@@ -114,6 +114,18 @@
     padding-top: 20px;
     color: $lighttext;
   }
+
+  @media (max-width: $mobile) {
+    height: 80vh;
+    width: 50vw;
+    background-color: #1565c0e8;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 300;
+    overflow-y: scroll;
+    transition: $transition;
+  }
 }
 
 .cart--close {

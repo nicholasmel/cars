@@ -26,6 +26,9 @@ function Header() {
                 <div className='arrow--left' onClick={prevSlide}>
                     <ArrowCircleLeftIcon sx={{ fontSize: '70px', color: 'white' }} />
                 </div>
+                <div className="caption">
+                    <h1>Shift it up a notch.</h1>
+                </div>
                 <div className='arrow-right' onClick={nextSlide}>
                     <ArrowCircleRightIcon sx={{ fontSize: '70px', color: 'white' }} />
                 </div>
@@ -39,8 +42,7 @@ function Header() {
                             )}
                         </div>
                     )
-                }
-                )
+                })
             }
         </div >
     );
