@@ -4,10 +4,10 @@ import '../styles/Featured.css'
 const featured = [
     {
         title: 'Toyota Supra',
-        bgLeft: "https://toyota.scene7.com/is/image/toyota/SUP_MY20_0015_V001-1?wid=2000&fmt=jpg&fit=crop",
-        bgTop: "https://toyota.scene7.com/is/image/toyota/SUP_MY21_0015_V001-1?wid=2000&fmt=jpg&fit=crop",
-        bgBottom: "https://www.toyota.com/content/dam/toyota/vehicles/2022/gr-supra/gallery/SUP_MY22_0009_V001.png?wid=2000&fmt=jpg&fit=crop",
-        bgRight: "https://toyota.scene7.com/is/image/toyota/SUP_MY20_0128_V001?wid=2000&fmt=jpg&fit=crop",
+        bgLeft: "https://toyotaassets.scene7.com/is/image/toyota/SUP_MY23_0012_V001?wid=2000&fmt=jpg&fit=crop",
+        bgTop: "https://toyotaassets.scene7.com/is/image/toyota/SUP_MY23_0004_V001?wid=2000&fmt=jpg&fit=crop",
+        bgBottom: "https://toyotaassets.scene7.com/is/image/toyota/SUP_MY23_0002_V001?wid=2000&fmt=jpg&fit=crop",
+        bgRight: "https://toyotaassets.scene7.com/is/image/toyota/SUP_MY23_0006_V001?wid=2000&fmt=jpg&fit=crop",
     },
     {
         title: 'Nissan GT-R',
