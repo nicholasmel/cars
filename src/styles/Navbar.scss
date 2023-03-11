@@ -7,7 +7,7 @@
   background-color: $navcolor;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   align-items: center;
   text-align: center;
   justify-content: space-between;
@@ -64,16 +64,11 @@
   display: flex;
   height: auto;
   width: auto;
-  margin-right: 16vw;
+  margin-left: 7vw;
+  margin-right: $navbarpadding;
 
-  p {
-    font-size: small;
-    font-weight: 500;
-    color: $lighttext;
-
-    &:hover {
-      color: $navhover;
-    }
+  &:hover {
+    opacity: 0.4;
   }
 
   @media (max-width: $mobile) {

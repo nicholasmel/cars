@@ -1,6 +1,7 @@
 import React from 'react';
 import "../styles/Navbar.css";
 import logo from '../images/GR_logo.png'
+import ShoppingCart from '@mui/icons-material/ShoppingCart';
 
 function Navbar() {
 
@@ -34,7 +35,7 @@ function Navbar() {
                 <p onClick={scrollToFinance}>FINANCE</p>
             </div>
             <div className="navbar--right">
-                <p></p>
+                <ShoppingCart sx={{ fontSize: '30px', color: 'black' }} onClick={() => scrollToFinance()} />
             </div>
         </div>
     );
