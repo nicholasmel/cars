@@ -39,6 +39,9 @@ function CarResult() {
                     <p>NEWEST INVENTORY</p>
                 </div>
             </div>
+            <div className="results--title">
+                <h1>EXPLORE INVENTORY</h1>
+            </div>
             <div className={sidebar ? 'car-active' : 'car'}>
                 {cars.map((car, id) => (
                     <Card key={id} image={car.img} title={car.title} model={car.model} miles={car.miles} price={car.price} monthly={car.monthly} button={() => addToCart(car)} />
@@ -46,9 +49,9 @@ function CarResult() {
             </div>
             <div className={sidebar ? 'cart--item-active' : 'cart--item'}>
                 <div className='cart--close' onClick={leaveSidebar}>
-                    <CloseIcon sx={{ fontSize: '50px', color: 'white' }} />
+                    <CloseIcon sx={{ fontSize: '50px', color: 'gray' }} />
                 </div>
-                <h1>Shopping Cart</h1>
+                <h1>Cart</h1>
                 <div className='cart--item-card'>
                     {cart.map((car, id) => (
                         (price += car.price),
@@ -56,7 +59,13 @@ function CarResult() {
                     ))}
                 </div>
                 <div className='cart--total'>
-                    <h1>Subtotal({cart.length}): {currencyFormat(price)}</h1>
+                    {
+                        cart.length == 0 ? (
+                            <h1>Your Car Cart is empty</h1>
+                        ) : (
+                            <h1>Subtotal({cart.length}): {currencyFormat(price)}</h1>
+                        )
+                    }
                 </div>
             </div>
             <hr className='hr-line' />

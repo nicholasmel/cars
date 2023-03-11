@@ -12,6 +12,7 @@
   text-align: center;
   justify-content: space-between;
   scroll-behavior: smooth;
+  box-shadow: 0 0px 15px 0px $darkmediumtext;
 
   @media (max-width: $mobile) {
     height: 10vh;
@@ -32,9 +33,7 @@
   margin-left: $navbarpadding;
 
   img {
-    height: 50px;
-    color-adjust: unset;
-    filter: brightness(180%);
+    height: 40px;
   }
 
   @media (max-width: $mobile) {
@@ -46,13 +45,13 @@
   display: flex;
   height: auto;
   width: auto;
-  margin-right: 8vw;
+  gap: 6vw;
 
   p {
     padding: 0px 20px;
     font-size: small;
-    font-weight: 500;
-    color: $lighttext;
+    font-weight: 700;
+    color: $darktext;
     cursor: pointer;
 
     &:hover {
@@ -65,7 +64,7 @@
   display: flex;
   height: auto;
   width: auto;
-  margin-right: $navbarpadding;
+  margin-right: 16vw;
 
   p {
     font-size: small;

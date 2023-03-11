@@ -1,6 +1,6 @@
 import React from 'react';
 import "../styles/Navbar.css";
-import logo from '../images/car-icon.png'
+import logo from '../images/GR_logo.png'
 
 function Navbar() {
 
@@ -31,10 +31,10 @@ function Navbar() {
             <div className="navbar--middle">
                 <p onClick={scrollToResults}>INVENTORY</p>
                 <p onClick={scrollToFeatured}>FEATURED CARS</p>
-                <p onClick={scrollToFinance}>FINANCING</p>
+                <p onClick={scrollToFinance}>FINANCE</p>
             </div>
             <div className="navbar--right">
-                <p>SIGN IN</p>
+                <p></p>
             </div>
         </div>
     );

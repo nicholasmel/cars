@@ -24,13 +24,10 @@ function Header() {
         <div className="header">
             <div className='arrow'>
                 <div className='arrow--left' onClick={prevSlide}>
-                    <ArrowCircleLeftIcon sx={{ fontSize: '70px', color: 'white' }} />
-                </div>
-                <div className="caption">
-                    <h1>Shift it up a notch.</h1>
+                    <ArrowCircleLeftIcon sx={{ fontSize: '70px', color: 'gray' }} />
                 </div>
                 <div className='arrow-right' onClick={nextSlide}>
-                    <ArrowCircleRightIcon sx={{ fontSize: '70px', color: 'white' }} />
+                    <ArrowCircleRightIcon sx={{ fontSize: '70px', color: 'gray' }} />
                 </div>
             </div>
             {
@@ -39,6 +36,9 @@ function Header() {
                         <div key={id} className='slider'>
                             {id === slide && (
                                 <img src={item.img} alt="" />
+                            )}
+                            {id === slide && (
+                                <h1>{item.caption}</h1>
                             )}
                         </div>
                     )

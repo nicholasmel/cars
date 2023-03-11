@@ -23,7 +23,12 @@
   overflow: hidden;
 
   h2 {
-    font-weight: 400;
+    z-index: 1;
+    font-size: 2em;
+    font-weight: 500;
+    position: absolute;
+    padding-left: 20px;
+    color: $lighttext;
 
     @media (max-width: $mobile) {
       text-align: center;
@@ -39,10 +44,9 @@
   grid-template-areas: "item-one item-two item-three";
   height: 50vh;
   width: 100%;
-  background-color: $bgcolor;
+  background-color: rgba(0, 0, 0, 0);
   margin-bottom: 20px;
   overflow: hidden;
-  box-shadow: $cardshadow;
 
   @media (max-width: $mobile) {
     display: grid;
@@ -52,10 +56,8 @@
     grid-template-areas: "item-one";
     height: 60vh;
     width: 100%;
-    background-color: $bgcolor;
     margin-bottom: 20px;
     overflow: hidden;
-    box-shadow: $cardshadow;
 
     .item-two {
       display: none;
@@ -103,6 +105,7 @@
   background-repeat: no-repeat;
   transition: $imgtransition;
   overflow: hidden;
+  box-shadow: $cardshadow;
 
   &:hover {
     transform: scale(1.2);
@@ -116,6 +119,7 @@
   background-repeat: no-repeat;
   overflow: hidden;
   transition: $imgtransition;
+  box-shadow: $cardshadow;
 
   &:hover {
     transform: scale(1.2);
