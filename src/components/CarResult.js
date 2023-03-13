@@ -22,7 +22,6 @@ function CarResult() {
     const addToCart = (cars) => {
         setCart([...cart, { ...cars }]);
         showSidebar();
-        return (<Navbar sideBar={showSidebar()} />)
     };
 
     const removeFromCart = (carsToRemove) => {
