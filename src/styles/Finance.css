@@ -76,7 +76,7 @@
   height: auto;
   width: 40vw;
   min-width: 400px;
-  background-color: #1565c0;
+  background-color: #01579b;
   border-style: line;
   border-radius: 4px;
   -webkit-box-pack: center;
@@ -103,12 +103,14 @@
 .finance--calculator h2 {
   color: #fafafa;
   font-weight: 300;
+  margin-bottom: 0px;
 }
 
 .finance--calculator h3 {
   color: #fafafa;
   font-weight: 600;
   font-size: 4vh;
+  margin-top: 5px;
 }
 
 .finance--input {
@@ -138,7 +140,7 @@
             justify-content: center;
     -webkit-transition: 1200ms;
     transition: 1200ms;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
 }
 /*# sourceMappingURL=Finance.css.map */

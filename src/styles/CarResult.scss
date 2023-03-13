@@ -44,6 +44,10 @@
   h4 {
     color: $darkmediumtext;
     padding-right: 8px;
+
+    &.sort {
+      padding-right: 0px;
+    }
   }
 
   p {

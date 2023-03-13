@@ -2,18 +2,18 @@ import React from 'react';
 import "../styles/Card.css";
 import Button from '@mui/material/Button';
 
-function Card({ image, title, model, miles, price, monthly, button }) {
+function Card({ image, title, model, miles, price, date, button }) {
     const rate = 0.01819509;
-    let formatPrice = '$' + price.toFixed().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+    let formatPrice = '$' + price.toFixed().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
 
-    let formatMonthly = 'Est. $' + (price * rate).toFixed().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,') + '/mo*'
+    let formatMonthly = 'Est. $' + (price * rate).toFixed().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,') + '/mo*';
 
     return (
         <div className='card'>
             <div className='card--border' />
             <img src={image} alt='' />
             <div className='card--info'>
-                <h1>{title}</h1>
+                <h1>{date} {title}</h1>
                 <div className='card--info-primary'>
                     <h4>{model}</h4>
                     <p>{miles}</p>

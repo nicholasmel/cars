@@ -62,7 +62,7 @@
   height: auto;
   width: 40vw;
   min-width: 400px;
-  background-color: $navcolor;
+  background-color: $bgfooter;
   border-style: line;
   border-radius: 4px;
   justify-content: center;
@@ -80,11 +80,13 @@
   h2 {
     color: $lighttext;
     font-weight: 300;
+    margin-bottom: 0px;
   }
   h3 {
     color: $lighttext;
     font-weight: 600;
     font-size: 4vh;
+    margin-top: 5px;
   }
 }
 
@@ -107,6 +109,6 @@
     padding: 0px 30px;
     justify-content: center;
     transition: $transition;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
 }

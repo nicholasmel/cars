@@ -4,7 +4,6 @@ import logo from '../images/GR_logo.png'
 import ShoppingCart from '@mui/icons-material/ShoppingCart';
 
 function Navbar() {
-
     const scrollTop = () => {
         window.scrollTo({
             top: 0,
@@ -35,7 +34,7 @@ function Navbar() {
                 <p onClick={scrollToFinance}>FINANCE</p>
             </div>
             <div className="navbar--right">
-                <ShoppingCart sx={{ fontSize: '30px', color: 'black' }} onClick={() => scrollToFinance()} />
+                <ShoppingCart sx={{ fontSize: '30px', color: 'black' }} onClick={() => scrollToFeatured()} />
             </div>
         </div>
     );
