@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/cars/static/css/main.fa523c54.css",
-    "main.js": "/cars/static/js/main.5e991d92.js",
+    "main.css": "/cars/static/css/main.2270bbe7.css",
+    "main.js": "/cars/static/js/main.b6e0f933.js",
     "static/js/787.121a0e85.chunk.js": "/cars/static/js/787.121a0e85.chunk.js",
+    "static/media/R8.jpg": "/cars/static/media/R8.e2b0a966ead3f0995420.jpg",
     "static/media/audi4.png": "/cars/static/media/audi4.5c5b5413e1ce04eec62c.png",
     "static/media/audi1.png": "/cars/static/media/audi1.7f0a419d213d48719509.png",
     "static/media/SupraTwo.jpeg": "/cars/static/media/SupraTwo.20830a9fe41769bbadd0.jpeg",
@@ -11,7 +12,6 @@
     "static/media/gtr4.png": "/cars/static/media/gtr4.309211581220c78fa801.png",
     "static/media/gtr1.png": "/cars/static/media/gtr1.e1d5d4ecbc503f2fb41a.png",
     "static/media/bmw4.png": "/cars/static/media/bmw4.0991f8634e57986d2ac2.png",
-    "static/media/GRFamily.jpeg": "/cars/static/media/GRFamily.bd76dbefccfb59f2f2a1.jpeg",
     "static/media/yellowsupra1.png": "/cars/static/media/yellowsupra1.ad4c1ffd21abbae984fe.png",
     "static/media/bmw1.png": "/cars/static/media/bmw1.e423761b012090ffbc10.png",
     "static/media/suprapay.png": "/cars/static/media/suprapay.bd8a1f3fb0b5964dca69.png",
@@ -27,12 +27,12 @@
     "static/media/blueis4.jpg": "/cars/static/media/blueis4.8f638c9e1c34456863a1.jpg",
     "static/media/blackrcf4.jpg": "/cars/static/media/blackrcf4.3ea2b94e3e931cdd329d.jpg",
     "index.html": "/cars/index.html",
-    "main.fa523c54.css.map": "/cars/static/css/main.fa523c54.css.map",
-    "main.5e991d92.js.map": "/cars/static/js/main.5e991d92.js.map",
+    "main.2270bbe7.css.map": "/cars/static/css/main.2270bbe7.css.map",
+    "main.b6e0f933.js.map": "/cars/static/js/main.b6e0f933.js.map",
     "787.121a0e85.chunk.js.map": "/cars/static/js/787.121a0e85.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa523c54.css",
-    "static/js/main.5e991d92.js"
+    "static/css/main.2270bbe7.css",
+    "static/js/main.b6e0f933.js"
   ]
 }
