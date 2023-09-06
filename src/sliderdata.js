@@ -6,7 +6,7 @@ export const sliderdata = [
     },
     {
         id: 2,
-        img: require("../src/sliderimages/GRFamily.jpeg"),
+        img: require("../src/sliderimages/R8.jpg"),
         caption: "LET'S GO PLACES",
     },
     {

@@ -57,13 +57,13 @@
   display: flex;
   height: auto;
   width: auto;
-  gap: 6vw;
+  gap: 1vw;
 }
 
 .navbar--middle p {
   padding: 0px 20px;
-  font-size: small;
-  font-weight: 700;
+  font-size: medium;
+  font-weight: 500;
   color: #212121;
   cursor: pointer;
 }
@@ -78,11 +78,16 @@
   display: flex;
   height: auto;
   width: auto;
-  margin-left: 7vw;
+  gap: 0.5vw;
+  margin-left: 2vw;
   margin-right: 7vw;
 }
 
-.navbar--right:hover {
+.navbar--right p {
+  cursor: pointer;
+}
+
+.navbar--right p:hover {
   opacity: 0.4;
 }
 

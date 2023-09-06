@@ -59,6 +59,9 @@ function CarResult() {
 
     return (
         <div className='results'>
+            <div className="results--title">
+                <h1>EXPLORE INVENTORY</h1>
+            </div>
             <div className="results--banner">
                 <p>RESULTS: {cars.length}</p>
                 <div className={sidebar ? 'results--banner-right-active' : 'results--banner-right'}>
@@ -85,9 +88,6 @@ function CarResult() {
                     </div>
                 </div>
             </div>
-            <div className="results--title">
-                <h1>EXPLORE INVENTORY</h1>
-            </div>
             <div className={sidebar ? 'car-active' : 'car'}>
                 {array.map((car, id) => (
                     <Card key={id} image={car.img} title={car.title} model={car.model} miles={car.miles} price={car.price} monthly={car.monthly} date={car.date} button={() => addToCart(car)} />
@@ -107,7 +107,7 @@ function CarResult() {
                 <div className='cart--total'>
                     {
                         cart.length == 0 ? (
-                            <h1>Your Car Cart is empty</h1>
+                            <h1>Your cart is empty</h1>
                         ) : (
                             <h1>Subtotal({cart.length}): {currencyFormat(price)}</h1>
                         )

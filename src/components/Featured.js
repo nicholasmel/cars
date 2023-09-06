@@ -3,18 +3,18 @@ import '../styles/Featured.css'
 
 const featured = [
     {
-        title: 'Toyota Supra',
-        bgLeft: "https://toyotaassets.scene7.com/is/image/toyota/SUP_MY23_0012_V001?wid=2000&fmt=jpg&fit=crop",
-        bgTop: "https://toyotaassets.scene7.com/is/image/toyota/SUP_MY23_0004_V001?wid=2000&fmt=jpg&fit=crop",
-        bgBottom: "https://toyotaassets.scene7.com/is/image/toyota/SUP_MY23_0002_V001?wid=2000&fmt=jpg&fit=crop",
-        bgRight: "https://toyotaassets.scene7.com/is/image/toyota/SUP_MY23_0006_V001?wid=2000&fmt=jpg&fit=crop",
+        title: 'Porsche 911 GT3',
+        bgLeft: "https://files.porsche.com/filestore/image/multimedia/none/model-series-911-gt3-int-higlights-01/normal/b24ec846-8d5e-11eb-80d4-005056bbdc38;sN;tjpeg060;c1690;gc/porsche-normal.jpg",
+        bgTop: "https://files.porsche.com/filestore/image/multimedia/none/992-gt3-touring-intro/normal/21ff161f-9ecb-11eb-80d4-005056bbdc38;sN;tjpeg060;c1690;gc/porsche-normal.jpg",
+        bgBottom: "https://files.porsche.com/filestore/image/multimedia/none/model-series-911-gt3-int-higlights-02/normal/2cb99a5d-8d5f-11eb-80d4-005056bbdc38;sN;tjpeg060;c1690;gc/porsche-normal.jpg",
+        bgRight: "https://files.porsche.com/filestore/video/multimedia/none/model-series-911-gt3-ext-higlights-04/zoom/c54db44b-5cb8-11eb-80d2-005056bbdc38;sG;tjpeg060/porsche-image.jpg",
     },
     {
         title: 'Nissan GT-R',
-        bgLeft: "https://www.nissanusa.com/content/dam/Nissan/us/vehicles/gtr/2021/gallery/new-mosaics/exterior/2021-nissan-gt-r-t-spec-badge-l.jpg",
-        bgTop: "https://www.nissanusa.com/content/dam/Nissan/us/vehicles/gtr/2021/gallery/new-mosaics/exterior/2021-nissan-gt-r-front-fascia-l.jpg",
-        bgBottom: "https://www.nissanusa.com/content/dam/Nissan/us/vehicles/gtr/2021/gallery/new-mosaics/exterior/2021-nissan-gt-r-rear-bumper-l.jpg",
-        bgRight: "https://www.nissanusa.com/content/dam/Nissan/us/vehicles/gtr/2021/gallery/new-mosaics/interior/2021-nissan-gt-r-steering-wheel-mounted-controls-l.jpg",
+        bgLeft: "https://www.nissanusa.com/content/dam/Nissan/us/vehicles/gtr/2024/gallery/exterior-mosaic/2024-nissan-gtr-nismo-fender-vents-o.jpg",
+        bgTop: "https://www.nissanusa.com/content/dam/Nissan/us/vehicles/gtr/2024/gallery/exterior-mosaic/2024-nissan-gt-r-high-performance-luxury-sports-car-light-green-o.jpg",
+        bgBottom: "https://www.nissanusa.com/content/dam/Nissan/us/vehicles/gtr/2024/gallery/interior-mosaic/2024-nissan-gt-r-interior-view-leather-wrapped-steering-wheel-seats-o.jpg",
+        bgRight: "https://www.nissanusa.com/content/dam/Nissan/us/vehicles/gtr/2024/gallery/exterior-mosaic/2024-nissan-gt-r-rays-forged-wheels-o.jpg",
     },
     {
         title: 'Audi R8',

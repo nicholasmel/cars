@@ -13,7 +13,7 @@
   display: flex;
   -ms-flex-flow: wrap;
       flex-flow: wrap;
-  padding: 2px 60px;
+  padding: 0 5vw;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;

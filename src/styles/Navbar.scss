@@ -45,12 +45,12 @@
   display: flex;
   height: auto;
   width: auto;
-  gap: 6vw;
+  gap: 1vw;
 
   p {
     padding: 0px 20px;
-    font-size: small;
-    font-weight: 700;
+    font-size: medium;
+    font-weight: 500;
     color: $darktext;
     cursor: pointer;
 
@@ -64,11 +64,16 @@
   display: flex;
   height: auto;
   width: auto;
-  margin-left: 7vw;
+  gap: 0.5vw;
+  margin-left: 2vw;
   margin-right: $navbarpadding;
 
-  &:hover {
-    opacity: 0.4;
+  p {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.4;
+    }
   }
 
   @media (max-width: $mobile) {
