@@ -114,7 +114,6 @@ function CarResult() {
                     }
                 </div>
             </div>
-            <hr className='hr-line' />
         </div >
     );
 }

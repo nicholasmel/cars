@@ -48,8 +48,6 @@ function Featured() {
                     </div>
                 </div >
             ))}
-            <div className="featured--bottom" />
-            <hr className='hr-line' />
         </div >
     );
 }
