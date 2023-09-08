@@ -2,7 +2,7 @@
   height: auto;
   width: auto;
   background-color: #f5f5f5;
-  padding-top: 2px;
+  padding-top: 80px;
   -webkit-transition: 1200ms;
   transition: 1200ms;
   -webkit-box-pack: center;
@@ -13,8 +13,6 @@
       -ms-flex-align: center;
           align-items: center;
   scroll-margin-top: 70px;
-  -webkit-box-shadow: 0 -20px 10px 30px #f5f5f5;
-          box-shadow: 0 -20px 10px 30px #f5f5f5;
 }
 
 .finance h1 {
@@ -80,7 +78,7 @@
   min-width: 400px;
   background-color: #01579b;
   border-style: line;
-  border-radius: 4px;
+  border-radius: 2px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -115,6 +113,16 @@
   margin-top: 5px;
 }
 
+.finance--calculator h4 {
+  color: #fafafa;
+  font-weight: 400;
+}
+
+.finance--calculator p {
+  color: #fafafa;
+  font-weight: 500;
+}
+
 .finance--input {
   height: auto;
   width: auto;
@@ -144,5 +152,19 @@
     transition: 1200ms;
     padding-bottom: 20px;
   }
+}
+
+.loan--estimate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 40px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.loan--info {
+  display: inline;
 }
 /*# sourceMappingURL=Finance.css.map */

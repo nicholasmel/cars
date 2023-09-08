@@ -4,13 +4,12 @@
   height: auto;
   width: auto;
   background-color: $bgcolor;
-  padding-top: 2px;
+  padding-top: 80px;
   transition: $transition;
   justify-content: center;
   text-align: center;
   align-items: center;
   scroll-margin-top: $scrollmargin;
-  box-shadow: 0 -20px 10px 30px $bgcolor;
 
   h1 {
     text-align: center;
@@ -65,7 +64,7 @@
   min-width: 400px;
   background-color: $bgfooter;
   border-style: line;
-  border-radius: 4px;
+  border-radius: 2px;
   justify-content: center;
   align-items: center;
   transition: $transition;
@@ -88,6 +87,14 @@
     font-weight: 600;
     font-size: 4vh;
     margin-top: 5px;
+  }
+  h4 {
+    color: $lighttext;
+    font-weight: 400;
+  }
+  p {
+    color: $lighttext;
+    font-weight: 500;
   }
 }
 
@@ -112,4 +119,14 @@
     transition: $transition;
     padding-bottom: 20px;
   }
+}
+
+.loan--estimate {
+  display: flex;
+  padding-bottom: 40px;
+  justify-content: space-evenly;
+}
+
+.loan--info {
+  display: inline;
 }

@@ -2,14 +2,12 @@
   height: auto;
   width: auto;
   background-color: rgba(0, 0, 0, 0.9);
-  padding-top: 20px;
+  padding-top: 80px;
   padding-bottom: 100px;
   -webkit-transition: 1200ms;
   transition: 1200ms;
   color: #fafafa;
   scroll-margin-top: 70px;
-  -webkit-box-shadow: 0 0px 20px 30px rgba(0, 0, 0, 0.9);
-          box-shadow: 0 0px 20px 30px rgba(0, 0, 0, 0.9);
 }
 
 .featured h1 {
@@ -21,8 +19,6 @@
   height: auto;
   width: auto;
   background-color: rgba(0, 0, 0, 0.9);
-  -webkit-box-shadow: 0 0px 10px 10px rgba(0, 0, 0, 0.9);
-          box-shadow: 0 0px 10px 10px rgba(0, 0, 0, 0.9);
   padding: 4px 0px;
   overflow: hidden;
 }

@@ -36,29 +36,61 @@ function Finance() {
         setTrade(event.target.value);
     };
 
+    const formatter = new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD',
+    });
+
     const calculateFinance = () => {
         let msrp = Number(price);
         let off = Number(cash) + Number(trade);
         let loan = msrp - off;
         let interest = loan * (credit * .01);
         let total = loan + interest;
-        let final = Math.round(total / term);
+        let final = formatter.format(total / term);
         return (Number.isNaN(final) ? 0 : final);
+    }
+
+    const calculateLoanAmount = () => {
+        let msrp = Number(price);
+        let off = Number(cash) + Number(trade);
+        let loan = msrp - off;
+
+        return formatter.format(loan);
+    }
+
+    const calculateInterest = () => {
+        let msrp = Number(price);
+        let off = Number(cash) + Number(trade);
+        let loan = msrp - off;
+        let interest = loan * (credit * .01);
+
+        return formatter.format(interest);
+    }
+
+    const calculateTotalLoan = () => {
+        let msrp = Number(price);
+        let off = Number(cash) + Number(trade);
+        let loan = msrp - off;
+        let interest = loan * (credit * .01);
+        let total = loan + interest;
+
+        return formatter.format(total);
     }
 
     return (
         <div className='finance'>
             <div className="finance--title">
                 <h1>PAYMENT ESTIMATOR</h1>
-                <p>Use the payment estimator tool to asses your payment options</p>
+                <p>Use auto loan calculator to see an estimate of your monthly car payment.</p>
             </div>
             <div className="finance--content" >
                 <img src={pay} alt=""></img>
                 <div className="finance--calculator">
-                    <h1>Finance</h1>
+                    <h1>Auto Loan Calculator</h1>
                     <div className="finance--input">
                         <FormControl sx={{ m: 1, width: '25vw' }}>
-                            <OutlinedInput onChange={handlePriceChange} sx={{ backgroundColor: 'white' }} placeholder="$63,379" />
+                            <OutlinedInput onChange={handlePriceChange} sx={{ backgroundColor: 'white', height: '40px' }} placeholder="$63,379" />
                             <FormHelperText>Vehicle Price</FormHelperText>
                         </FormControl>
                         <FormControl sx={{ m: 1, width: '12vw' }}>
@@ -69,7 +101,7 @@ function Finance() {
                                 value={credit}
                                 label="Credit"
                                 onChange={handleCreditChange}
-                                sx={{ backgroundColor: 'white', textAlign: 'left' }}
+                                sx={{ backgroundColor: 'white', textAlign: 'left', height: '40px' }}
                             >
                                 <MenuItem value={4.19}>Excellent 720+</MenuItem>
                                 <MenuItem value={5.2}>Great 719-690</MenuItem>
@@ -83,7 +115,7 @@ function Finance() {
                             <FormHelperText>Estimated Credit Score</FormHelperText>
                         </FormControl>
                         <FormControl sx={{ m: 1, width: '12vw' }}>
-                            <OutlinedInput onChange={handleCashChange} sx={{ backgroundColor: 'white' }} placeholder="$2000" />
+                            <OutlinedInput onChange={handleCashChange} sx={{ backgroundColor: 'white', height: '40px' }} placeholder="$2000" />
                             <FormHelperText>Cash Down</FormHelperText>
                         </FormControl>
                         <FormControl sx={{ m: 1, width: '12vw' }}>
@@ -94,7 +126,7 @@ function Finance() {
                                 value={term}
                                 label="Term"
                                 onChange={handleTermChange}
-                                sx={{ backgroundColor: 'white', textAlign: 'left' }}
+                                sx={{ backgroundColor: 'white', textAlign: 'left', height: '40px' }}
                             >
                                 <MenuItem value={24}>24 Months</MenuItem>
                                 <MenuItem value={36}>36 Months</MenuItem>
@@ -105,16 +137,29 @@ function Finance() {
                             <FormHelperText>Term Length</FormHelperText>
                         </FormControl>
                         <FormControl sx={{ m: 1, width: '12vw' }}>
-                            <OutlinedInput sx={{ backgroundColor: 'white' }} value={credit + '%'} />
+                            <OutlinedInput sx={{ backgroundColor: 'white', height: '40px' }} value={credit + '%'} />
                             <FormHelperText>Estimated APR</FormHelperText>
                         </FormControl>
                         <FormControl sx={{ m: 1, width: '12vw' }}>
-                            <OutlinedInput onChange={handleTradeChange} sx={{ backgroundColor: 'white' }} placeholder="$0" />
+                            <OutlinedInput onChange={handleTradeChange} sx={{ backgroundColor: 'white', height: '40px' }} placeholder="$0" />
                             <FormHelperText>Estimated Trade-In Value</FormHelperText>
                         </FormControl>
                     </div>
-                    <h2>Finance for</h2>
-                    <h3>${calculateFinance()}/month</h3>
+                    <h2>Your loan estimate</h2>
+                    <div className='loan--estimate'>
+                        <div className='loan--info'>
+                            <h4>Monthly payment</h4>
+                            <h3>{calculateFinance()}</h3>
+                        </div>
+                        <div className='loan--info'>
+                            <h4>Loan amount</h4>
+                            <p>{calculateLoanAmount()}</p>
+                            <h4>Total interest cost</h4>
+                            <p>{calculateInterest()}</p>
+                            <h4>Total loan payments</h4>
+                            <p>{calculateTotalLoan()}</p>
+                        </div>
+                    </div>
                 </div>
             </div >
 
